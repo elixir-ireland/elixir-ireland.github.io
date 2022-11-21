@@ -1,0 +1,169 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Miscellaneous | ELIXIR Template</title>
+    <meta name="description" content="Miscellaneous, for the ELIXIR website template, demonstrating
+  possible styles and HTML">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- HEADER -->
+    <header class="main-header" id="header">
+        <div class="container">
+            <div class="hidden"><a href="misc.html#main-content">Skip to content</a></div>
+            <div id="logo">
+                <a href="index.html"><img src="images/white-orange-logo.png" alt="ELIXIR logo" title="Home" /></a>
+            </div>
+            <!-- Main nav -->
+            <label class="show-nav" for="nav-checkbox" title="Show main menu"></label>
+            <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
+            <nav id="main-nav">
+                <ul class="floated-inline">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="headings.html">Headings</a></li>
+                    <li><a href="lists.html">Lists</a></li>
+                    <li><a href="tables.html">Tables</a></li>
+                    <li><a href="images.html">Images</a></li>
+                    <li><a href="forms.html">Forms</a></li>
+                    <li class="active"><a href="misc.html">Misc</a></li>
+                </ul>
+            </nav>
+
+            <form method="get" action="http://dev.elixir-europe.org/search.php" id="search">
+                <label for="checkbox" class="checkbox-label" title="Search"></label>
+                <input type='checkbox' id="checkbox" class="checkbox">
+                <div>
+                    <input type="text" name="search" />
+                    <input type="submit" class="button grey" value="Search" />
+                </div>
+            </form>
+        </div>
+        <!-- /container -->
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN CONTENT AREA -->
+    <div class="body-content two-column">
+        <div class="container">
+
+            <!-- Main content -->
+            <main class="main-column" id="main-content">
+                <h1>Miscellaneous</h1>
+                <p>Notice that this page has only two columns! You need to add the <code>two-column</code> class on the <code>div</code> with a class of <code>body-content</code>.</p>
+                <h2>A note on general utility classes</h2>
+                <p>There is a section in the style sheet for 'Utility classes'. These are general classes you can apply to most elements. You can combine them in different ways. e.g. <code>&lt;p class="grey align-right little"&gt;</code> makes the text grey, aligns it to the right and makes it smaller:</p>
+                <p class="grey align-right little">This is small and grey.</p>
+                <p>You can see more examples on the <a href="headings.html">Headings page</a>. The <a href="positioning-images.html">Positioning images</a> pages demonstrates general classes that you can use to position elements (not just images).</p>
+                <h2>The <code>tinted</code> class</h2>
+                <p>You can use the <code>tinted</code> class to provide a tinted background to elements. By default this background is grey:</p>
+                <div class="tinted">This is a <code>div</code> with a class of <code>tinted</code>.</div>
+                <p>But you can change the colour by adding another class. Note that we try to stick to three colours on the website (orange, blue, green). These are the brand colours (see the <a href="https://drive.google.com/file/d/0B8in1NtGRloYX3BWbVZsSjZ3LW8/view">ELIXIR brand guidelines</a>). The red and yellow below are for system messages or warnings only:</p>
+                <div class="tinted green-bg">This is a <code>div</code> with a class of <code>tinted green</code>.</div>
+                <div class="tinted red-bg">This is a <code>div</code> with a class of <code>tinted red</code>.</div>
+                <div class="tinted yellow-bg">This is a <code>div</code> with a class of <code>tinted yellow</code>.</div>
+                <h2>Links as buttons</h2>
+                <p>There are styles to make an ordinary link look like a button. You might want a "Register" button for an event, for example, when the button is just a link to EventBrite and is not a form element. Here is <code>&lt;div class="button blue"&gt;&lt;a href=""&gt;Button text&lt;/a&gt;&lt;/div&gt;</code>:</p>
+                <div class="button blue"><a href="misc.html">Button text</a></div>
+                <p>And here is <code>&lt;div class="button orange"&gt;&lt;a href=""&gt;Button text&lt;/a&gt;&lt;/div&gt;</code>:
+                <div class="button orange"><a href="misc.html">Button text</a></div>
+                <p>See the <a href="icon-fonts.html">icon fonts page</a> for examples of using icons with buttons.</p>
+                <h2 class="tm">Borders</h2>
+                <p>There is a <code>border</code> class you can apply to any element.</p>
+                <p class="border"> This paragraph has the <code>border</code> class. The class is useful for images that have a white background.</p>
+
+                <ul class="display-inline separated align-right xtm xbm">
+                    <li><a href="misc.html">Link 1</a></li>
+                    <li><a href="misc.html#header">Back to the top</a></li>
+                </ul>
+            </main>
+
+            <!-- Sidebar one -->
+            <div class="sidebar-column sidebar-one">
+                <div class="subnav">
+                    <h2><a href="misc.html">Miscellaneous</a></h2>
+                    <nav>
+                        <ul>
+                          <li><a href="misc.html">Link 1</a></li>
+                          <li><a href="misc.html">Link 2</a></li>
+                          <li><a href="misc.html">Link 3</a></li>
+                          <li><a href="misc.html">Link 4</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- / main content area -->
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <section>
+            <h2 class="hidden">Global links</h2>
+            <div class="container">
+                <div class="fat-footer flexrow">
+                    <div class="percent-40">
+                        <h3>Links header</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="misc.html">Link 1</a></li>
+                                <li><a href="misc.html">Link 2</a></li>
+                                <li><a href="misc.html">Link 3</a></li>
+                                <li><a href="misc.html">Link 4</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="percent-40">
+                        <h3>Links header 2</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="misc.html">Link 1</a></li>
+                                <li><a href="misc.html">Link 2</a></li>
+                                <li><a href="misc.html">Link 3</a></li>
+                                <li><a href="misc.html">Link 4</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="percent-20">
+                        <div>
+                            <a href="index.html"><img src="images/white-orange-logo.png" alt="ELIXIR logo" title="Home" /></a>
+                        </div>
+                        <ul class="display-inline">
+                            <li>
+                                <a href="https://twitter.com/elixireurope" class="fa fa-twitter-square" title="Twitter"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/elixir-europe" class="fa fa-linkedin-square" title="LinkedIn"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCvwFIw5HomylguGOGxR8B8w" class="fa fa-youtube-square" title="YouTube"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.flickr.com/photos/elixir-europe/" class="fa fa-flickr" title="Flickr"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+          <h2 class="hidden">Contact and copyright</h2>
+            <div class="container">
+                <div class="thin-footer">
+                    <address>Contact info<br />Address line 1, Address line 2<br >Tel: 123 456</address>
+                    <p>Copyright statement</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</div> <!-- / wrapper -->
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bitmaps | ELIXIR Template</title>
+    <meta name="description" content="Bitmaps, for the ELIXIR website template, demonstrating
+  possible styles and HTML">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- HEADER -->
+    <header class="main-header" id="header">
+        <div class="container">
+            <div class="hidden"><a href="bitmaps.html#main-content">Skip to content</a></div>
+            <div id="logo">
+                <a href="index.html"><img src="images/white-orange-logo.png" alt="ELIXIR logo" title="Home" /></a>
+            </div>
+            <!-- Main nav -->
+            <label class="show-nav" for="nav-checkbox" title="Show main menu"></label>
+            <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
+            <nav id="main-nav">
+                <ul class="floated-inline">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="headings.html">Headings</a></li>
+                    <li><a href="lists.html">Lists</a></li>
+                    <li><a href="tables.html">Tables</a></li>
+                    <li class="active"><a href="images.html">Images</a></li>
+                    <li><a href="forms.html">Forms</a></li>
+                    <li><a href="misc.html">Misc</a></li>
+                </ul>
+            </nav>
+
+            <form method="get" action="http://dev.elixir-europe.org/search.php" id="search">
+                <label for="checkbox" class="checkbox-label" title="Search"></label>
+                <input type='checkbox' id="checkbox" class="checkbox">
+                <div>
+                    <input type="text" name="search" />
+                    <input type="submit" class="button grey" value="Search" />
+                </div>
+            </form>
+        </div>
+        <!-- /container -->
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN CONTENT AREA -->
+    <div class="body-content three-column">
+        <div class="container">
+
+            <!-- Main content -->
+            <main class="main-column" id="main-content">
+                <h1>Bitmaps with HTML5</h1>
+                <p>Before deciding on which technique to use you need to decide what you want to achieve. </p>
+                <ol class="xbp">
+                  <li>Do you want your images to stay the same size, but look good on high resolution displays? Choose resolution switching only.</li>
+                  <li>Do you want your image to look good on high resolution displays <em>and</em> change size? Perhaps you want them to decrease in size with the screen width, for example. Use the <code>w</code> descriptor and the <code>sizes</code> attribute.</li>
+                  <li>Do you want to swap your image for another one at different screen widths? Perhaps you have a photo of a crowd of people which works fine on large screens, but when it is squished down on a small screen the people look blurry. You might want to swap the image for a cropped version that only shows three people. If so, you want the <code>picture</code> element.</li>
+                </ol>
+                <h2>1. Resolution switching (<code>srcset</code> and the <code>x</code> descriptor)</h2>
+                <p>Use this when you want your image width to stay the same in proportion to the page. In this example I've made three versions of the same image: 300px, 600px and 900px wide. They are then associated with 1x, 2x and 3x pixel densities respectively.</p>
+                <figure>
+                <img src="images/example-image-300px.jpg"
+srcset="images/example-image-300px.jpg 1x, images/example-image-600px.jpg 2x,images/example-image-900px.jpgg 3x" alt="Human Data meeting">
+                </figure>
+<pre><code>&lt;figure&gt;
+  &lt;img src="images/example-image-300px.jpg"
+    srcset="images/example-image-300px.jpg 1x,
+    images/example-image-600px.jpg 2x,
+    images/example-image-900px.jpg 3x"
+    alt="Human Data meeting"/&gt;
+&lt;/figure&gt;</code></pre>
+                <p>The browser chooses the best image for the pixel density of the display. <code>1x</code> equates to the pixel density seen on a 96 dpi display (a traditional desktop display). <code>2x</code> is double this display density (like iPhone 6, Retina Macs, Galaxy S3), and <code>3x</code> triple the display density (like on iPhone 6 Plus and 7, and Galaxy Note III).</p>
+                <p><strong>Remember:</strong> in this technique the image stays the same width across screen sizes, and you need to know the display density of the devices you are targeting. Also <code>srcset</code> is not supported by IE or Edge.</p>
+                <h2>2. The <code>w</code> descriptor and the <code>sizes</code> attribute</h2>
+                <p>Do this when you want your image to change sizes across different screen widths. Let's look at an example. </p>
+                <figure>
+                <img src="images/example-image-300px.jpg"
+srcset="images/example-image-300px.jpg 300w, images/example-image-600px.jpg 600w,images/example-image-900px.jpgg 900w" sizes="(max-width: 480px) 100vw, 300px"  alt="Human Data meeting">
+                </figure>
+<pre><code>&lt;figure&gt;
+  &lt;img src="images/example-image-300px.jpg"
+    srcset="images/example-image-300px.jpg 300w,
+    images/example-image-600px.jpg 600w,
+    images/example-image-900px.jpg 900w"
+    sizes="(max-width: 480px) 100vw, 300px"
+     alt="Human Data meeting"/&gt;
+&lt;/figure&gt;</code></pre>
+                <p>First we use the <code>src</code> attribute to give a default image to browsers that don't support <code>srcset</code>. Then we include the same images as before, except with a <code>w</code> descriptor after them. This lets the browser know how wide the images are before it has downloaded them (<code>600w</code> = 600px).</p>
+                <p>The <code>sizes</code> attribute tells the browser how wide the image should be at different screen sizes. It works a bit like media queries. So in our example we're saying "At screen widths below 480px make the image 100% of the viewport width (<code>vw</code>). For bigger screen sizes just make the image 300px wide." The browser also chooses the best version of the image for the display density, so you still get sharp images, as in resolution switching.</p>
+                <p>Try resizing your browser window to see the change in image size at small screens. Of course you can specify more breakpoints than the one at 480px.</p>
+                <h2>The <code>picture</code> element</h2>
+                <p>This allows you to use different crops of an image, or different images, at different screen sizes. In this example we've set break points in the <code>&lt;source&gt;</code> tag and we deliver a different version of the image at each break point. </p>
+                <p>For wide screens (<code>min-width: 960px</code>) you see six people, then between 700x and 960px you get a version of the image that shows four people. Below 700px you get a version of the image that shows three people. Notice that we're also using resolution switching.</p>
+                <figure>
+                  <picture>
+                    <source srcset="images/example-image-300px.jpg 1x, images/example-image-600px.jpg 2x,
+                    images/example-image-900px.jpg 3x"
+                            media="(min-width: 960px)">
+                    <source srcset="images/example-image-300px-cropped2.jpg 1x, images/example-image-600px-cropped2.jpg 2x,
+                    images/example-image-900px-cropped2.jpg 3x"
+                         media="(min-width: 700px)">
+                     <source srcset="images/example-image-300px-cropped.jpg 1x, images/example-image-600px-cropped.jpg 2x,
+                     images/example-image-900px-cropped.jpg 3x">
+                     <img src="images/example-image-300px.jpg" alt="Human Data meeting" />
+                  </picture>
+                  <figcaption>Count the people as you resize your browser window!</figcaption>
+                </figure>
+<pre><code>&lt;figure&gt;
+  &lt;picture&gt;
+    &lt;source
+    srcset="images/example-image-300px.jpg 1x,
+    images/example-image-600px.jpg 2x,
+    images/example-image-900px.jpg 3x"
+    media="(min-width: 960px)"&gt;
+
+    &lt;source
+    srcset="images/example-image-300px-cropped2.jpg 1x,
+    images/example-image-600px-cropped2.jpg 2x,
+    images/example-image-900px-cropped2.jpg 3x"
+    media="(min-width: 700px)"&gt;
+
+    &lt;source
+    srcset="images/example-image-300px-cropped.jpg 1x,
+    images/example-image-600px-cropped.jpg 2x,
+    images/example-image-900px-cropped.jpg 3x"&gt;
+
+    &lt;img src="images/example-image-300px.jpg" alt="Human Data meeting" /&gt;
+  &lt;/picture&gt;
+  &lt;figcaption&gt;Count the people as you resize your browser window!&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+                <h2 class="xtm">Which approach to use?</h2>
+                <p>Apart from which use case you have (see the questions at the top of the page) bear in mind:</p>
+                <ul class="xbp">
+                  <li>You need a system that can automatically crop images into different sizes. If you don't there are online services like:
+                    <ul>
+                      <li><a href="https://www.imgix.com/">imgix</a>: you store your images elsewhere (your server or the Amazon Cloud) and imgix chops them up for you. You link to the images using an imgix url.</li>
+                      <li><a href="http://cloudinary.com/">Cloudinary</a>: stores your images and crops them for you. </li>
+                      <li><a href="http://www.responsivebreakpoints.com/">Responsive Image Breakpoints</a>: crops your images for you and you download the images. It provides the code you need to display the image. You need to manually upload and download each image, though.</li>
+                    </ul>
+                  </li>
+                  <li>You need large images to start with.  In the desktop world, if you wanted an image 300px wide you just needed a 300px wide image. With these techniques you need one at least 900px wide. </li>
+                </ul>
+                <div class="tinted green">
+                  <p><strong>elixir-europe.org is moving towards approach 1 (resolution switching)</strong>, although the ability to use all approaches would be ideal.</p>
+                </div>
+
+                <ul class="display-inline separated align-right xtm xbm">
+                    <li><a href="images.html">Images</a></li>
+                    <li><a href="bitmaps.html#header">Back to the top</a></li>
+                </ul>
+            </main>
+
+            <!-- Sidebar one -->
+            <div class="sidebar-column sidebar-one">
+                <div class="subnav">
+                    <h2><a href="images.html">Images</a></h2>
+                    <nav>
+                        <ul>
+                          <li><a href="svgs.html">SVGs</a></li>
+                          <li><a href="icon-fonts.html">Icon fonts</a></li>
+                          <li><a href="bitmaps.html" class="active">Bitmaps with HTML5</a></li>
+                          <li><a href="retinafy.html">Retinafy technique</a></li>
+                          <li><a href="positioning-images.html">Positioning images</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Sidebar two -->
+            <div class="sidebar-column sidebar-two">
+                <!-- You may want to use the <aside> element rather than a <div> here,
+                if the <nav> is for related content i.e. <aside class="subnav" role="complementary">. -->
+                <div class="subnav">
+                    <h2>Sidebar title</h2>
+                    <nav>
+                        <ul>
+                          <li><a href="bitmaps.html">Link 1</a></li>
+                          <li><a href="bitmaps.html">Link 2</a></li>
+                          <li><a href="bitmaps.html">Link 3</a></li>
+                          <li><a href="bitmaps.html">Link 4</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- / main content area -->
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <section>
+            <h2 class="hidden">Global links</h2>
+            <div class="container">
+                <div class="fat-footer flexrow">
+                    <div class="percent-40">
+                        <h3>Links header</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="bitmaps.html">Link 1</a></li>
+                                <li><a href="bitmaps.html">Link 2</a></li>
+                                <li><a href="bitmaps.html">Link 3</a></li>
+                                <li><a href="bitmaps.html">Link 4</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="percent-40">
+                        <h3>Links header 2</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="bitmaps.html">Link 1</a></li>
+                                <li><a href="bitmaps.html">Link 2</a></li>
+                                <li><a href="bitmaps.html">Link 3</a></li>
+                                <li><a href="bitmaps.html">Link 4</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="percent-20">
+                        <div>
+                            <a href="index.html"><img src="images/white-orange-logo.png" alt="ELIXIR logo" title="Home" /></a>
+                        </div>
+                        <ul class="display-inline">
+                            <li>
+                                <a href="https://twitter.com/elixireurope" class="fa fa-twitter-square" title="Twitter"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/elixir-europe" class="fa fa-linkedin-square" title="LinkedIn"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCvwFIw5HomylguGOGxR8B8w" class="fa fa-youtube-square" title="YouTube"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.flickr.com/photos/elixir-europe/" class="fa fa-flickr" title="Flickr"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+          <h2 class="hidden">Contact and copyright</h2>
+            <div class="container">
+                <div class="thin-footer">
+                    <address>Contact info<br />Address line 1, Address line 2<br >Tel: 123 456</address>
+                    <p>Copyright statement</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</div> <!-- / wrapper -->
+</body>
+
+</html>
