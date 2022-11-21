@@ -1,0 +1,228 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tables | ELIXIR Template</title>
+    <meta name="description" content="Tables, for the ELIXIR website template, demonstrating
+  possible styles and HTML">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- HEADER -->
+    <header class="main-header" id="header">
+        <div class="container">
+            <div class="hidden"><a href="tables.html#main-content">Skip to content</a></div>
+            <div id="logo">
+                <a href="index.html"><img src="images/white-orange-logo.png" alt="ELIXIR logo" title="Home" /></a>
+            </div>
+            <!-- Main nav -->
+            <label class="show-nav" for="nav-checkbox" title="Show main menu"></label>
+            <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
+            <nav id="main-nav">
+                <ul class="floated-inline">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="headings.html">Headings</a></li>
+                    <li><a href="lists.html">Lists</a></li>
+                    <li class="active"><a href="tables.html">Tables</a></li>
+                    <li><a href="images.html">Images</a></li>
+                    <li><a href="forms.html">Forms</a></li>
+                    <li><a href="misc.html">Misc</a></li>
+                </ul>
+            </nav>
+
+            <form method="get" action="http://dev.elixir-europe.org/search.php" id="search">
+                <label for="checkbox" class="checkbox-label" title="Search"></label>
+                <input type='checkbox' id="checkbox" class="checkbox">
+                <div>
+                    <input type="text" name="search" />
+                    <input type="submit" class="button grey" value="Search" />
+                </div>
+            </form>
+        </div>
+        <!-- /container -->
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN CONTENT AREA -->
+    <div class="body-content three-column">
+        <div class="container">
+
+            <!-- Main content -->
+            <main class="main-column" id="main-content">
+                <h1>Tables</h1>
+                <p>This table uses the <code>.percent-50</code> class on a <code>th</code>. This gives the <code>th</code> a width of 50%.</p>
+                <table>
+				 <thead>
+				  <tr>
+					 <th class="percent-50">Percent-50 (<code>th</code>)</th>
+					 <th>Percent-50 (<code>th</code>)</th>
+				  </tr>
+				 </thead>
+				 <tbody>
+				  <tr>
+					 <td>Data cell</td>
+					 <td>Data cell</td>
+				  </tr>
+				  <tr>
+					 <td>Data cell</td>
+					 <td>Data cell</td>
+				  </tr>
+				  <tr>
+					 <td>Data cell</td>
+					 <td>Data cell</td>
+				  </tr>
+				 </tbody>
+				</table>
+               <p>This table uses the <code>.percent-60</code> and <code>.percent-20</code> classes on the <code>th</code>s:</p>
+                <table>
+				 <thead>
+				  <tr>
+					 <th class="percent-60">Percent-60</th>
+					 <th class="percent-20">Percent-20</th>
+					 <th class="percent-20">Percent-20</th>
+				  </tr>
+				 </thead>
+				 <tbody>
+				  <tr>
+					 <td>Data cell</td>
+					 <td>Data cell</td>
+					  <td>Data cell</td>
+				  </tr>
+				  <tr>
+					 <td>Data cell</td>
+					 <td>Data cell</td>
+					  <td>Data cell</td>
+				  </tr>
+				  <tr>
+					 <td>Data cell</td>
+					 <td>Data cell</td>
+					  <td>Data cell</td>
+				  </tr>
+				 </tbody>
+				</table>
+				<p>This is a table style used for 'Related events/news' on the main ELIXIR site (e.g. <a href="https://www.elixir-europe.org/platforms/compute">the Compute page</a>). It's for when you want a table to be more prominent. It also has a large space above (1.5em) to set it apart from the rest of the content. </p>
+				<h2 class="table-heading">Table heading</h2>
+				<table>
+				  <tr>
+					 <td class="percent-33">Data cell with <code>percent-33</code> class</td>
+					 <td class="percent-33">Data cell with <code>percent-33</code> class</td>
+					 <td class="percent-33">Data cell with <code>percent-33</code> class</td>
+				  </tr>
+				  <tr>
+					 <td>Data cell</td>
+					 <td>Data cell</td>
+					  <td>Data cell</td>
+				  </tr>
+				</table>
+                <ul class="display-inline separated align-right xtm xbm">
+                    <li><a href="tables.html">Link 1</a></li>
+                    <li><a href="tables.html#header">Back to the top</a></li>
+                </ul>
+            </main>
+
+            <!-- Sidebar one -->
+            <div class="sidebar-column sidebar-one">
+                <div class="subnav">
+                    <h2><a href="tables.html">Tables</a></h2>
+                    <nav>
+                        <ul>
+                            <li><a href="tables.html" class="active">Link 1</a></li>
+                            <li><a href="tables.html">Link 2</a></li>
+                            <li><a href="tables.html" class="collapsed">Link 3</a></li>
+                            <li><a href="tables.html" class="expanded">Link 4</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Sidebar two -->
+            <div class="sidebar-column sidebar-two">
+                <!-- You may want to use the <aside> element rather than a <div> here,
+                if the <nav> is for related content i.e. <aside class="subnav" role="complementary">. -->
+                <div class="subnav">
+                    <h2>Sidebar title</h2>
+                    <nav>
+                        <ul>
+                            <li class="active"><a href="tables.html">Link 1</a></li>
+                            <li><a href="tables.html">Link 2</a></li>
+                            <li><a href="tables.html">Link 3</a></li>
+                            <li><a href="tables.html">Link 4</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- / main content area -->
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <section>
+            <h2 class="hidden">Global links</h2>
+            <div class="container">
+                <div class="fat-footer flexrow">
+                    <div class="percent-40">
+                        <h3>Links header</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="tables.html">Link 1</a></li>
+                                <li><a href="tables.html">Link 2</a></li>
+                                <li><a href="tables.html">Link 3</a></li>
+                                <li><a href="tables.html">Link 4</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="percent-40">
+                        <h3>Links header 2</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="tables.html">Link 1</a></li>
+                                <li><a href="tables.html">Link 2</a></li>
+                                <li><a href="tables.html">Link 3</a></li>
+                                <li><a href="tables.html">Link 4</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="percent-20">
+                        <div>
+                            <a href="index.html"><img src="images/white-orange-logo.png" alt="ELIXIR logo" title="Home" /></a>
+                        </div>
+                        <ul class="display-inline">
+                            <li>
+                                <a href="https://twitter.com/elixireurope" class="fa fa-twitter-square" title="Twitter"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/elixir-europe" class="fa fa-linkedin-square" title="LinkedIn"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCvwFIw5HomylguGOGxR8B8w" class="fa fa-youtube-square" title="YouTube"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.flickr.com/photos/elixir-europe/" class="fa fa-flickr" title="Flickr"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+          <h2 class="hidden">Contact and copyright</h2>
+            <div class="container">
+                <div class="thin-footer">
+                    <address>Contact info<br />Address line 1, Address line 2<br >Tel: 123 456</address>
+                    <p>Copyright statement</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</div> <!-- / wrapper -->
+</body>
+
+</html>

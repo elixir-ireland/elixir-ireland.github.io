@@ -1,0 +1,254 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home page | ELIXIR Template</title>
+    <meta name="description" content="Home page for the ELIXIR website template, demonstrating
+  possible styles and HTML">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- HEADER -->
+        <header class="main-header" id="header">
+            <div class="container">
+                <div class="hidden"><a href="index.html#main-content">Skip to content</a></div>
+                <div id="logo">
+                    <a href="index.html"><img src="images/white-orange-logo.png" alt="ELIXIR logo" title="Home" /></a>
+                </div>
+                <!-- Main nav -->
+                <label class="show-nav" for="nav-checkbox" title="Show main menu"></label>
+                <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
+                <nav id="main-nav">
+                    <ul class="floated-inline">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="misc.html">Misc</a></li>
+                    </ul>
+                </nav>
+
+                <form method="get" action="http://dev.elixir-europe.org/search.php" id="search">
+                    <label for="checkbox" class="checkbox-label" title="Search"></label>
+                    <input type='checkbox' id="checkbox" class="checkbox">
+                    <div>
+                        <input type="text" name="search" />
+                        <input type="submit" class="button grey" value="Search" />
+                    </div>
+                </form>
+            </div>
+            <!-- /container -->
+        </header>
+        <!-- /HEADER -->
+
+        <!-- MAIN CONTENT AREA -->
+        <div class="body-content one-column">
+            <div class="container">
+
+                <!-- Main content -->
+                <main class="main-column" id="main-content">
+                    <!-- First flexrow -->
+                    <div class="flexrow gutters">
+                        <div class="percent-33">
+                            <div class="tinted">
+                                <h2>How to use - git ftp test.</h2>
+                                <p>Read the text on this page, inspect the source, and click through the main menu above to see examples of how you can use the code in this template.</p>
+                                <p> This home page layout uses the <a href="https://www.w3schools.com/css/css3_flexbox.asp"><code>flexbox</code></a> element. You can create different numbers of columns and use the <code>percent</code> classes in the CSS to set the box widths. This box (or 'flex item') has a class of <code>percent-33</code>.</p>
+                            </div>
+                        </div>
+                        <div class="percent-66">
+                            <div class="border padded">
+                                <p>You can put a picture in here. If you do, you might want to make the row a fixed height.</p>
+                                <p>This box has a class of <code>percent-66</code>. Here is an article about a <a href="https://philipwalton.github.io/solved-by-flexbox/demos/grids/">flexbox grid system</a>. It's similar to the technique used on this page. The only difference is that the flexbox content in this page is in a <code>&lt;div&gt;</code> nested within the flex item <code>&lt;div&gt;</code>. This gives us more flexibility with padding.</p>
+                                <p>This box also has the class <code>border</code>, which adds the border, and a class <code>padding</code>. By default there is no padding in the inner <code>&lt;div&gt;</code>. If you want it, then add the <code>padding</code> class. If you don't want padding at all then you can remove the inner <code>&lt;div&gt;</code>. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /First flexrow -->
+                    <!-- Second flexrow -->
+                    <div class="flexrow gutters">
+                        <div class="percent-33">
+                            <div class="tinted">
+                                <h2>Layout</h2>
+                                <p class="bm">This template also uses flexbox for the main layout. It's very simple. You include one, two, or no sidebars and change the class of the <code>&lt;div&gt;</code> with the class of <code>body-content</code>. There are no sidebars on this page so we have:
+                                    <br /> <code>&lt;div class="body-content one-column"&gt;</code>
+                                    <br />The <code>body-content</code> area is the area between the header and footer.</p>
+                                <p>The <a href="misc.html">Miscellaneous page</a> has a two-column layout, and the rest of the pages have a three-column layout.</p>
+                            </div>
+                        </div>
+                        <div class="percent-33">
+                            <div class="tinted">
+                                <h2>Columns within a page</h2>
+                                <p>You create columns within the page by adding flexboxes, like on this page. </p>
+                                <p>If you don't want gutters between the columns, leave the <code>gutters</code> class off the <code>flexrow</code> div.</p>
+                            </div>
+                        </div>
+                        <div class="percent-33">
+                            <div class="tinted">
+                                <h2>Remember</h2>
+                                <p>This isn't supposed to be a framework like Bootstrap or Foundation. It's just supposed to give some code that will help you create an ELIXIR template in your own system. You may prefer to use a native starter theme in a CMS like Drupal or Wordpress, or roll your own theme for your system. These will have their own classes, layout techniques and ways of presenting images. But hopefully you can adopt much of the code in this template to your own system.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Second flewrow -->
+                    <!-- Second flexrow -->
+                    <div class="flexrow gutters">
+                        <div class="percent-25">
+                            <div class="border rounded padded">
+                                <h2>SASS</h2>
+                                <p>The CSS was generated from SASS, a CSS preprocessor. SASS makes it easier to ensure consistency across the site and maintain your code. The colours on the site, for example, are all variables in SASS. This means that the orange is the same everywhere.</p>
+                            </div>
+                        </div>
+                        <div class="percent-25">
+                            <div class="border rounded padded">
+                                <h2>SASS (cont.)</h2>
+                                <p>If you don't use SASS then I do recommend using it (or another CSS preprocessor). Have a look at the <a href="http://sass-lang.com">SASS website</a> to start with, but there are tons of good tutorials online, too. I normally use a SASS framework like Compass, but to keep things simple I haven't used it here. </p>
+                            </div>
+                        </div>
+                        <div class="percent-25">
+                            <div class="border rounded padded">
+                                <h2>SASS (cont.)</h2>
+                                <p>You may also want to streamline your coding by using a task runner like <a href="https://gruntjs.com/">Grunt</a> or <a href="http://gulpjs.com/">Gulp</a>.</p>
+                                <p>You don't have to, though, you can just edit the CSS provided.</p>
+                            </div>
+                        </div>
+                        <div class="percent-25">
+                            <div class="border rounded padded">
+                                <h2>Javascript</h2>
+                                <p>This template doesn't use any javascript. The responsive menu and search box are done with CSS. It isn't a widely used technique so it's probably best to stick with a trusted Javascript solution using your favourite Javascript library. <a href="http://www.outofscope.com/css-only-menu-toggle-no-javascript-required/">Here is an article</a> about the pure CSS method, though, if you're interested.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Second flewrow -->
+                    <!-- Second flexrow -->
+                    <div class="flexrow gutters">
+                        <div class="percent-33">
+                            <div class="border rounded padded green-bg">
+                                <h2>Safari bug</h2>
+                                <p>The Safari browser up to 10.1 does not give content within a flex item equal heights. In other words the boxes on this page would shrink to the height of their content and would not form rows of equal height. This is a <a href="https://bugs.webkit.org/show_bug.cgi?id=137730">known big</a> that has been fixed in Safari 11. The workaround is to give the flex items the property of <code>display: flex</code> (see <a href="https://stackoverflow.com/questions/33636796/chrome-safari-not-filling-100-height-of-flex-parent">this discussion</a>). This may not work for you in all situations. If anything strange happens in your flexbox try neutralising this rule by setting the flex items to <code>display: inline</code> . This bug is relatively obscure and does not affect the layout of this template.</p>
+                            </div>
+                        </div>
+                        <div class="percent-33">
+                            <div class="border rounded padded">
+                                <h2>Browser support</h2>
+                                <p>This template should work on any modern browser (mobile or desktop). It will probably be a bit buggy in IE10 and below. If you need to support those browsers then you can use <code>display: table</code> instead of flexbox, as in <a href="https://codepen.io/CalebKester/pen/eLDzm">this Codepen</a>.</p>
+                                <h2>Font</h2>
+                                <p>This template uses the Google font <a href="https://fonts.google.com/specimen/Lato">Lato</a>.</p>
+                            </div>
+                        </div>
+                        <div class="percent-33">
+                            <div class="border rounded padded">
+                                <h2>A note on the current elixir-europe site</h2>
+                                <p>The <a href="index.html">current site</a> uses Drupal 7. This came out in 2011, and needed to support browsers like IE8 so the code is relatively old-fashioned. This template uses more modern code, and different code to the main ELIXIR website. It's the code the main ELIXIR site is aiming for!</p>
+                                <p>The current ELIXIR site, incidentally, is a subtheme of <a href="https://www.drupal.org/project/adaptivetheme">AdaptiveTheme</a>.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /Second flewrow -->
+                    <div class="flexrow gutters">
+                        <div class="percent-50">
+                            <div class="tinted">
+                                <p>The code for this row is:</p>
+<pre><code>&lt;div class="flexrow gutters"&gt;
+  &lt;div class="percent-50"&gt;
+    &lt;div class="tinted"&gt;
+      (Content in here)
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="percent-50"&gt;
+    &lt;div class="tinted"&gt;
+      (Content in here)
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+                        <div class="percent-50">
+                            <div class="tinted">
+                                <h2>Font</h2>
+                                <p>This template uses the Google font <a href="https://fonts.google.com/specimen/Lato">Lato</a>.</p>
+                                <h2>Other things to mention</h2>
+                                <p>Schema.org, sectioning, atomic design (how SASS organised), PLatform and Use Case icons.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /second flexrow -->
+                </main>
+            </div>
+            <!-- /container -->
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="main-footer">
+            <section>
+                <h2 class="hidden">Global links</h2>
+                <div class="container">
+                    <div class="fat-footer flexrow">
+                        <div class="percent-40">
+                            <h3>Links header</h3>
+                            <nav>
+                                <ul>
+                                    <li><a href="index.html">Link 1</a></li>
+                                    <li><a href="index.html">Link 2</a></li>
+                                    <li><a href="index.html">Link 3</a></li>
+                                    <li><a href="index.html">Link 4</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="percent-40">
+                            <h3>Links header 2</h3>
+                            <nav>
+                                <ul>
+                                    <li><a href="index.html">Link 1</a></li>
+                                    <li><a href="index.html">Link 2</a></li>
+                                    <li><a href="index.html">Link 3</a></li>
+                                    <li><a href="index.html">Link 4</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="percent-20">
+                            <div>
+                                <a href="index.html"><img src="images/white-orange-logo.png" alt="ELIXIR logo" title="Home" /></a>
+                            </div>
+                            <ul class="display-inline">
+                                <li>
+                                    <a href="https://twitter.com/elixireurope" class="fa fa-twitter-square" title="Twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/elixir-europe" class="fa fa-linkedin-square" title="LinkedIn"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCvwFIw5HomylguGOGxR8B8w" class="fa fa-youtube-square" title="YouTube"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.flickr.com/photos/elixir-europe/" class="fa fa-flickr" title="Flickr"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section>
+                <div class="container">
+                    <div class="thin-footer">
+                        <address>Contact info<br />Address line 1, Address line 2<br >Tel: 123 456</address>
+                        <p>Copyright statement</p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <!-- / wrapper -->
+</body>
+
+</html>

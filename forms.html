@@ -1,0 +1,242 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Forms | ELIXIR Template</title>
+    <meta name="description" content="Forms, for the ELIXIR website template, demonstrating
+  possible styles and HTML">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+      fieldset label {width: 4.5em;}
+    </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- HEADER -->
+    <header class="main-header" id="header">
+        <div class="container">
+            <div class="hidden"><a href="forms.html#main-content">Skip to content</a></div>
+            <div id="logo">
+                <a href="index.html"><img src="images/white-orange-logo.png" alt="ELIXIR logo" title="Home" /></a>
+            </div>
+            <!-- Main nav -->
+            <label class="show-nav" for="nav-checkbox" title="Show main menu"></label>
+            <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
+            <nav id="main-nav">
+                <ul class="floated-inline">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="headings.html">Headings</a></li>
+                    <li><a href="lists.html">Lists</a></li>
+                    <li><a href="tables.html">Tables</a></li>
+                    <li><a href="images.html">Images</a></li>
+                    <li class="active"><a href="forms.html">Forms</a></li>
+                    <li><a href="misc.html">Misc</a></li>
+                </ul>
+            </nav>
+
+            <form method="get" action="http://dev.elixir-europe.org/search.php" id="search">
+                <label for="checkbox" class="checkbox-label" title="Search"></label>
+                <input type='checkbox' id="checkbox" class="checkbox">
+                <div>
+                    <input type="text" name="search" />
+                    <input type="submit" class="button grey" value="Search" />
+                </div>
+            </form>
+        </div>
+        <!-- /container -->
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN CONTENT AREA -->
+    <div class="body-content three-column">
+        <div class="container">
+
+            <!-- Main content -->
+            <main class="main-column" id="main-content">
+                <h1>Forms</h1>
+                <p>Forms are only lightly styled. This is partly to keep things simple, but also to avoid breaking the functionaility of elements like select boxes. These can be buggy to style.</p>
+                <form action="forms.html">
+                  <div class="field">
+                    <label for="example">Text field label</label>
+                    <input type="text" name="example" id="example">
+                  </div>
+                  <div class="field">
+                    <label for="comment">Textarea</label>
+                    <textarea id="comment" name="comment"></textarea>
+                  </div>
+                  <div class="field inline-label">
+                    <label for="email">Email field</label>
+                    <input type="email" name="email" id="email">
+                    <p class="description">An email field with an inline label and a description underneath.</p>
+                  </div>
+                  <div class="field inline-label">
+                    <label for="test">Select box</label>
+                    <select>
+                      <option value="">- Select -</option>
+                      <option value="test1">Test1</option>
+                      <option value="test2">Test2</option>
+                      <option value="test3">Test3</option>
+                      <option value="test4">Test4</option>
+                    </select>
+                    <p class="description">The select box is the same height as an input box/button so you align them horizontally.</p>
+                  </div>
+                  <p>Each field is wrapped in a <code>&lt;div&gt;</code> with a class of <code>field</code>. If you want the labels to be inline you add another class to the div: <code>&lt;div class="field inline-label"&gt;</code>. This sets the label and any input element to <code>display: inline-block</code>. </p>
+                  <p>If you want the input elements to line up vertically then you need to set a width on the labels for that particular form. By default the inline labels will be the size of the label text, plus 5px margin to the right.</p>
+                  <h2>Checkboxes</h2>
+                  <p class="nobm">Checkboxes need the <code>inline-label</code> and <code>checkbox</code> classes on the parent <code>&lt;div&gt;</code>. We leave the default styling on the boxes themselves.</p>
+                  <div class="field inline-label checkbox">
+                    <div>
+                      <input type="checkbox" id="box1" name="checkbox1" value="checkbox1">
+                      <label for="box1">Checkbox 1</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="box2" name="checkbox2" value="checkbox2">
+                      <label for="box2">Checkbox 2</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="box3" name="checkbox3" value="checkbox3">
+                      <label for="box3">Checkbox 3</label>
+                    </div>
+                  </div>
+                  <h2>Form buttons</h2>
+                  <p>If you have the choice of submit buttons you might want to use the <code>&lt;button&gt;</code> element rather than using <code>&lt;input type="submit"&gt;</code>. The <code>&lt;button&gt;</code> element gives you more styling options.</p>
+                  <p>Here is <code>&lt;input type="submit" value="Submit" class="blue"&gt;</code>:</p>
+                    <input type="submit" value="Submit" class="blue">
+                  <p>and here is <code>&lt;button type="submit" class="blue"&gt;Submit&lt;/button&gt;</code>:</p>
+                  <button type="submit" class="blue">Submit</button>
+                  <p>Notice we can use the class to change the colour. Here is the button with a class of <code>orange</code>:</p>
+                  <button type="submit" class="orange">Submit</button>
+                  <h2 class="tm">Fieldset</h2>
+                  <p>Here is a fieldset with the generic class <code>tinted</code> to give a grey background. It also includes a <code>&lt;legend&gt;</code> ('My fieldset'). The submit button is aligned right because its container <code>&lt;div&gt;</code> has a general class of <code>align-right</code>. I've given all the labels the same width in a document-level style rule.</p>
+                  <fieldset class="tinted">
+                    <legend>My fieldset</legend>
+                    <div class="field inline-label">
+                      <label for="example">Name</label>
+                      <input type="text" name="example" id="example">
+                    </div>
+                    <div class="field inline-label">
+                      <label for="email">Email</label>
+                      <input type="email" name="email" id="email">
+                      <p class="description">An email field with an inline label and a description underneath.</p>
+                    </div>
+                    <div class="field inline-label">
+                      <label for="comment">Feedback</label>
+                      <textarea id="comment" name="comment"></textarea>
+                    </div>
+                    <div class="align-right">
+                        <button type="submit" class="orange">Submit</button>
+                    </div>
+                  </fieldset>
+                </form>
+
+                <ul class="display-inline separated align-right xtm xbm">
+                    <li><a href="forms.html">Link 1</a></li>
+                    <li><a href="forms.html#header">Back to the top</a></li>
+                </ul>
+            </main>
+
+            <!-- Sidebar one -->
+            <div class="sidebar-column sidebar-one">
+                <div class="subnav">
+                    <h2><a href="forms.html">Forms</a></h2>
+                    <nav>
+                        <ul>
+                            <li><a href="forms.html" class="active">Link 1</a></li>
+                            <li><a href="forms.html">Link 2</a></li>
+                            <li><a href="forms.html" class="collapsed">Link 3</a></li>
+                            <li><a href="forms.html" class="expanded">Link 4</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Sidebar two -->
+            <div class="sidebar-column sidebar-two">
+                <!-- You may want to use the <aside> element rather than a <div> here,
+                if the <nav> is for related content i.e. <aside class="subnav" role="complementary">. -->
+                <div class="subnav">
+                    <h2>Sidebar title</h2>
+                    <nav>
+                        <ul>
+                          <li><a href="forms.html">Link 1</a></li>
+                          <li><a href="forms.html">Link 2</a></li>
+                          <li><a href="forms.html">Link 3</a></li>
+                          <li><a href="forms.html">Link 4</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- / main content area -->
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <section>
+            <h2 class="hidden">Global links</h2>
+            <div class="container">
+                <div class="fat-footer flexrow">
+                    <div class="percent-40">
+                        <h3>Links header</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="forms.html">Link 1</a></li>
+                                <li><a href="forms.html">Link 2</a></li>
+                                <li><a href="forms.html">Link 3</a></li>
+                                <li><a href="forms.html">Link 4</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="percent-40">
+                        <h3>Links header 2</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="forms.html">Link 1</a></li>
+                                <li><a href="forms.html">Link 2</a></li>
+                                <li><a href="forms.html">Link 3</a></li>
+                                <li><a href="forms.html">Link 4</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="percent-20">
+                        <div>
+                            <a href="index.html"><img src="images/white-orange-logo.png" alt="ELIXIR logo" title="Home" /></a>
+                        </div>
+                        <ul class="display-inline">
+                            <li>
+                                <a href="https://twitter.com/elixireurope" class="fa fa-twitter-square" title="Twitter"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/elixir-europe" class="fa fa-linkedin-square" title="LinkedIn"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCvwFIw5HomylguGOGxR8B8w" class="fa fa-youtube-square" title="YouTube"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.flickr.com/photos/elixir-europe/" class="fa fa-flickr" title="Flickr"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+          <h2 class="hidden">Contact and copyright</h2>
+            <div class="container">
+                <div class="thin-footer">
+                    <address>Contact info<br />Address line 1, Address line 2<br >Tel: 123 456</address>
+                    <p>Copyright statement</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</div> <!-- / wrapper -->
+</body>
+
+</html>
