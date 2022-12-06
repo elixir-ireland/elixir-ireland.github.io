@@ -1,482 +1,412 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Home page | ELIXIR Ireland</title>
-    <meta
-      name="description"
-      content="Home page for the ELIXIR website template, demonstrating
-possible styles and HTML"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,400i,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-  </head>
-
-  <body>
-    <div id="wrapper">
-      <!-- HEADER -->
-      <header class="main-header" id="header">
-        <div class="container">
-          <div class="hidden">
-            <a href="index.html#main-content">Skip to content</a>
-          </div>
-          <div id="logo">
-            <a href="index.html"
-              ><img
-                src="images/white-orange-logo.png"
-                alt="ELIXIR logo"
-                title="Home"
-            /></a>
-          </div>
-          <!-- Main nav -->
-          <label
-            class="show-nav"
-            for="nav-checkbox"
-            title="Show main menu"
-          ></label>
-          <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
-          <nav id="main-nav">
-            <ul class="floated-inline">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="training.html">Training</a></li>
-              <li><a href="databases.html">Databases</a></li>
-              <li class="active"><a href="software.html">Software</a></li>
-              <li><a href="platforms.html">Platforms</a></li>
-              <li><a href="events.html">Events</a></li>
-              <li>
-                <a href="elix_ire_funded.html"
-                  >Elixir Ireland Funded Projects</a
-                >
-              </li>
-            </ul>
-          </nav>
-
-          <!--<form method="get" action="http://dev.elixir-europe.org/search.php" id="search">-->
-          <!--<label for="checkbox" class="checkbox-label" title="Search"></label>-->
-          <!--<input type='checkbox' id="checkbox" class="checkbox">-->
-          <!--<div>-->
-          <!--<input type="text" name="search" />-->
-          <!--<input type="submit" class="button grey" value="Search" />-->
-          <!--</div>-->
-          <!--</form>-->
-        </div>
-        <!-- /container -->
-      </header>
-      <!-- /HEADER -->
-
-      <!-- MAIN CONTENT AREA -->
-      <div class="body-content one-column">
-        <div class="container">
-          <!-- Main content -->
-          <main class="main-column" id="main-content">
-            <!-- First flexrow -->
-            <div class="flexrow gutters">
-              <div class="percent-100">
-                <div class="tinted">
-                  <h2>Software</h2>
-                  <p>
-                    The following bioinformatics software tools are hosted by
-                    Elixir Ireland associated researchers:
-                  </p>
-                  <div class="card-group mb-1">
-                    <div class="card">
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">RiboGalaxy</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          An instant of Galaxy tailored for ribosome profiling
-                          data analysis
-                        </h6>
-                        <div class="mt-auto">
-                          <a
-                            href="https://ribogalaxy.genomicsdatascience.ie/"
-                            class="card-link"
-                            ><i class="fa fa-globe"></i
-                          ></a>
-                          <a href="mailto:p.baranov@ucc.ie" class="card-link"
-                            ><i class="fa fa-envelope" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
+    <head>
+        <meta charset="utf-8" />
+        <title>Software | ELIXIR Ireland</title>
+        <meta name="description"
+              content="Home page for the ELIXIR website template, demonstrating possible styles and HTML"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700"
+              rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+              crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- HEADER -->
+            <header class="main-header" id="header">
+                <div class="container">
+                    <div class="hidden">
+                        <a href="index.html#main-content">Skip to content</a>
                     </div>
-                    <div class="card">
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">PAUSEPRED</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          A very simple applet for predicting ribosome pauses
-                          using ribosome profiling data. Not great, but better
-                          than nothing and nothing else is available for this
-                          purpose, hence the tool remains popular
-                        </h6>
-
-                        <div class="mt-auto">
-                          <a href="http://pausepred.ucc.ie" class="card-link"
-                            ><i class="fa fa-globe"></i
-                          ></a>
-                          <a href="mailto:p.baranov@ucc.ie" class="card-link"
-                            ><i class="fa fa-envelope" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
+                    <div id="logo">
+                        <a href="index.html">
+                            <img src="images/white-orange-logo.png" alt="ELIXIR logo" title="Home" />
+                        </a>
                     </div>
-                    <div class="card">
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Trips-viz</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          A computational environment for the analysis and
-                          visualisation of public and user-generated ribosome
-                          profiling data mapped to transcriptomes
-                        </h6>
-
-                        <div class="mt-auto">
-                          <a href="http://trips.ucc.ie" class="card-link"
-                            ><i class="fa fa-globe"></i
-                          ></a>
-                          <a href="mailto:p.baranov@ucc.ie" class="card-link"
-                            ><i class="fa fa-envelope" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
+                    <!-- Main nav -->
+                    <label class="show-nav" for="nav-checkbox" title="Show main menu"></label>
+                    <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
+                    <nav id="main-nav">
+                        <ul class="floated-inline">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="training.html">Training</a>
+                            </li>
+                            <li>
+                                <a href="databases.html">Databases</a>
+                            </li>
+                            <li class="active">
+                                <a href="software.html">Software</a>
+                            </li>
+                            <li>
+                                <a href="platforms.html">Platforms</a>
+                            </li>
+                            <li>
+                                <a href="events.html">Events</a>
+                            </li>
+                            <li>
+                                <a href="elix_ire_funded.html">Elixir Ireland Funded Projects</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--<form method="get"
+      action="http://dev.elixir-europe.org/search.php"
+      id="search">-->
+                        <!--<label for="checkbox" class="checkbox-label" title="Search"></label>-->
+                        <!--<input type='checkbox' id="checkbox" class="checkbox">-->
+                        <!--<div>-->
+                        <!--<input type="text" name="search" />-->
+                        <!--<input type="submit" class="button grey" value="Search" />-->
+                        <!--</div>-->
+                        <!--</form>-->
                     </div>
-                  </div>
-                  <div class="card-group mb-1">
-                    <div class="card">
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">BRCA-Core</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          Source code (Python) to identify protein complexes
-                          co-regulated in tumour proteomic samples
-                        </h6>
-
-                        <div class="mt-auto">
-                          <a
-                            href="https://github.com/orgs/cancergenetics/repositories"
-                            class="card-link"
-                            ><i class="fa fa-globe"></i
-                          ></a>
-                          <a href="mailto:colm.ryan@ucd.ie" class="card-link"
-                            ><i class="fa fa-envelope" aria-hidden="true"></i>
-                          </a>
+                    <!-- /container -->
+                </header>
+                <!-- /HEADER -->
+                <!-- MAIN CONTENT AREA -->
+                <div class="body-content one-column">
+                    <div class="container">
+                        <!-- Main content -->
+                        <main class="main-column" id="main-content">
+                            <!-- First flexrow -->
+                            <div class="flexrow gutters">
+                                <div class="percent-100">
+                                    <div class="tinted">
+                                        <h2>Software</h2>
+                                        <p>
+                                            The following bioinformatics software tools are hosted by
+                                            Elixir Ireland associated researchers:
+                                        </p>
+                                        <div class="card-group mb-1">
+                                            <div class="card">
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="card-title">RiboGalaxy</h5>
+                                                    <h6 class="card-subtitle mb-2 text-muted">
+                                                        An instant of Galaxy tailored for ribosome profiling
+                                                        data analysis
+                                                    </h6>
+                                                    <div class="mt-auto">
+                                                        <a href="https://ribogalaxy.genomicsdatascience.ie/" class="card-link"><i class="fa fa-globe"></i
+                                                        ></a>
+                                                    <a href="mailto:p.baranov@ucc.ie" class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title">PAUSEPRED</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">
+                                                A very simple applet for predicting ribosome pauses
+                                                using ribosome profiling data. Not great, but better
+                                                than nothing and nothing else is available for this
+                                                purpose, hence the tool remains popular
+                                            </h6>
+                                            <div class="mt-auto">
+                                                <a href="http://pausepred.ucc.ie" class="card-link"><i class="fa fa-globe"></i
+                                                ></a>
+                                            <a href="mailto:p.baranov@ucc.ie" class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Trips-viz</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">
+                                        A computational environment for the analysis and
+                                        visualisation of public and user-generated ribosome
+                                        profiling data mapped to transcriptomes
+                                    </h6>
+                                    <div class="mt-auto">
+                                        <a href="http://trips.ucc.ie" class="card-link"><i class="fa fa-globe"></i
+                                        ></a>
+                                    <a href="mailto:p.baranov@ucc.ie" class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i>
+                                </a>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                    <div class="card">
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Homo (v2.1)</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          Source code (C++). A program for analysing
-                          compositional heterogeneity across aligned sequence
-                          data (controls the family-wise error rate and the
-                          false discovery rate). The software also computes
-                          three compositional distances and the p distance.
-                        </h6>
-
-                        <div class="mt-auto">
-                          <a
-                            href="ttp://github.com/lsjermiin/Homo.v2.1"
-                            class="card-link"
-                            ><i class="fa fa-globe"></i
-                          ></a>
-                          <a href="mailto:lars.jermiin@ucd.ie" class="card-link"
-                            ><i class="fa fa-envelope" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">SatuRation (v1.0)</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          Source code (C++). A program designed to estimate the
-                          degree of saturation observed between two sequences of
-                          nucleotides, genotypes, di-nucleotides, codons or
-                          amino acids
-                        </h6>
-
-                        <div class="mt-auto">
-                          <a
-                            href="http://github.com/lsjermiin/SatuRation.v1.0"
-                            class="card-link"
-                            ><i class="fa fa-globe"></i
-                          ></a>
-                          <a href="mailto:lars.jermiin@ucd.ie" class="card-link"
-                            ><i class="fa fa-envelope" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card-group mb-1">
-                    <div class="card">
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">AliStat (1.14)</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          Source code (C++). Software for quantifying the
-                          completeness of multiple sequence alignments used in
-                          phylogenetic and phylogenomic research
-                        </h6>
-
-                        <div class="mt-auto">
-                          <a
-                            href="https://github.com/thomaskf/AliStat"
-                            class="card-link"
-                            ><i class="fa fa-globe"></i
-                          ></a>
-                          <a
-                            href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
-                            class="card-link"
-                            ><i class="fa fa-envelope" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">HAL-HAS (v2.6.4)</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          Source code (C++). Software for identifying optimal
-                          models of sequences evolution, which uses mixture
-                          models nucleotide sequence evolution that account for
-                          rate heterogeneity across sites and across lineages
-                        </h6>
-
-                        <div class="mt-auto">
-                          <a
-                            href="https://github.com/thomaskf/Hal-Has2"
-                            class="card-link"
-                            ><i class="fa fa-globe"></i
-                          ></a>
-                          <a
-                            href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
-                            class="card-link"
-                            ><i class="fa fa-envelope" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Hetero2 (v2.4)</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          Source code (C++). Software to simulate the evolution
-                          of nucleotide sequences on phylogenetic trees under
-                          heterogeneous Markovian conditions
-                        </h6>
-
-                        <div class="mt-auto">
-                          <a
-                            href="https://github.com/thomaskf/Hetero"
-                            class="card-link"
-                            ><i class="fa fa-globe"></i
-                          ></a>
-                          <a
-                            href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
-                            class="card-link"
-                            ><i class="fa fa-envelope" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card-group mb-1">
-                    <div class="card">
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">AliJack (v1.0)</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          Source code (C++). Software to randomly sample subsets
-                          of sequences from a multiple sequence alignment. The
-                          jackknife procedure is used.
-                        </h6>
-
-                        <div class="mt-auto">
-                          <a
-                            href="https://github.com/thomaskf/AliJack"
-                            class="card-link"
-                            ><i class="fa fa-globe"></i
-                          ></a>
-                          <a
-                            href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
-                            class="card-link"
-                            ><i class="fa fa-envelope" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">CheckJack (v1.0)</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          Source code (C++). Software to compute jackknife
-                          scores from trees generated from alignments generated
-                          using AliJack.
-                        </h6>
-
-                        <div class="mt-auto">
-                          <a
-                            href="https://github.com/thomaskf/CheckJack"
-                            class="card-link"
-                            ><i class="fa fa-globe"></i
-                          ></a>
-                          <a
-                            href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
-                            class="card-link"
-                            ><i class="fa fa-envelope" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">ModelFinder (v1.0)</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">
-                          Source code (C++). Software for model selection during
-                          phylogenetic analysis of nucleotide and amino acid
-                          sequences. ModelFinder is embedded in UQ-TREE and
-                          IQ-TREE 2 and can only be access by downloading these
-                          programs.
-                        </h6>
-
-                        <div class="mt-auto">
-                          <a href="http://www.iqtree.org" class="card-link"
-                            ><i class="fa fa-globe"></i
-                          ></a>
-                          <a
-                            href="mailto:m.bui@anu.edu.au,Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
-                            class="card-link"
-                            ><i class="fa fa-envelope" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!--<ul>-->
-                  <!--<li>-->
-                  <!--Machine learning for protein secondary structure and other-->
-                  <!--predictions (link to GP site)-->
-                  <!--</li>-->
-                  <!--<li>-->
-                  <!--Protein motif and peptide functional prediction and-->
-                  <!--analysis tools (bioware.ucd.ie)-->
-                  <!--</li>-->
-
-                  <!--<li>-->
-                  <!--Tools for sequence/phylogenetic analysis (LJ single link-->
-                  <!--and clustal.org link).-->
-                  <!--</li>-->
-                  <!--</ul>-->
                 </div>
-              </div>
+                <div class="card-group mb-1">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">BRCA-Core</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                Source code (Python) to identify protein complexes
+                                co-regulated in tumour proteomic samples
+                            </h6>
+                            <div class="mt-auto">
+                                <a href="https://github.com/orgs/cancergenetics/repositories"
+                                   class="card-link"><i class="fa fa-globe"></i
+                                ></a>
+                            <a href="mailto:colm.ryan@ucd.ie" class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <br />
-            <!-- /second flexrow -->
-          </main>
+            <div class="card">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Homo (v2.1)</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        Source code (C++). A program for analysing
+                        compositional heterogeneity across aligned sequence
+                        data (controls the family-wise error rate and the
+                        false discovery rate). The software also computes
+                        three compositional distances and the p distance.
+                    </h6>
+                    <div class="mt-auto">
+                        <a href="ttp://github.com/lsjermiin/Homo.v2.1" class="card-link"><i class="fa fa-globe"></i
+                        ></a>
+                    <a href="mailto:lars.jermiin@ucd.ie" class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
-        <!-- /container -->
-      </div>
-
-      <!-- FOOTER -->
-      <footer class="main-footer">
-        <!--<section>-->
-        <!--<h2 class="hidden">Global links</h2>-->
-        <!--<div class="container">-->
-        <!--<div class="fat-footer flexrow">-->
-        <!--<div class="percent-40">-->
-        <!--<h3>Links header</h3>-->
-        <!--<nav>-->
-        <!--<ul>-->
-        <!--<li><a href="index.html">Link 1</a></li>-->
-        <!--<li><a href="index.html">Link 2</a></li>-->
-        <!--<li><a href="index.html">Link 3</a></li>-->
-        <!--<li><a href="index.html">Link 4</a></li>-->
-        <!--</ul>-->
-        <!--</nav>-->
-        <!--</div>-->
-        <!--<div class="percent-40">-->
-        <!--<h3>Links header 2</h3>-->
-        <!--<nav>-->
-        <!--<ul>-->
-        <!--<li><a href="index.html">Link 1</a></li>-->
-        <!--<li><a href="index.html">Link 2</a></li>-->
-        <!--<li><a href="index.html">Link 3</a></li>-->
-        <!--<li><a href="index.html">Link 4</a></li>-->
-        <!--</ul>-->
-        <!--</nav>-->
-        <!--</div>-->
-        <!--<div class="percent-20">-->
-        <!--<div>-->
-        <!--<a href="index.html"-->
-        <!--><img-->
-        <!--src="images/white-orange-logo.png"-->
-        <!--alt="ELIXIR logo"-->
-        <!--title="Home"-->
-        <!--/></a>-->
-        <!--</div>-->
-        <!--<ul class="display-inline">-->
-        <!--<li>-->
-        <!--<a-->
-        <!--href="#"-->
-        <!--class="fa fa-twitter-square"-->
-        <!--title="Twitter"-->
-        <!--></a>-->
-        <!--</li>-->
-        <!--<li>-->
-        <!--<a-->
-        <!--href="#"-->
-        <!--class="fa fa-linkedin-square"-->
-        <!--title="LinkedIn"-->
-        <!--></a>-->
-        <!--</li>-->
-        <!--<li>-->
-        <!--<a-->
-        <!--href="#"-->
-        <!--class="fa fa-youtube-square"-->
-        <!--title="YouTube"-->
-        <!--></a>-->
-        <!--</li>-->
-        <!--<li>-->
-        <!--<a href="#" class="fa fa-flickr" title="Flickr"></a>-->
-        <!--</li>-->
-        <!--</ul>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</section>-->
-        <section>
-          <div class="container">
-            <div class="thin-footer">
-              <address>
-                Contact info<br />Address line 1, Address line 2<br />Tel: 123
-                456
-              </address>
-              <p>Copyright statement</p>
-            </div>
-          </div>
-        </section>
-      </footer>
     </div>
-    <!-- / wrapper -->
-  </body>
+    <div class="card">
+        <div class="card-body d-flex flex-column">
+            <h5 class="card-title">SatuRation (v1.0)</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+                Source code (C++). A program designed to estimate the
+                degree of saturation observed between two sequences of
+                nucleotides, genotypes, di-nucleotides, codons or
+                amino acids
+            </h6>
+            <div class="mt-auto">
+                <a href="http://github.com/lsjermiin/SatuRation.v1.0" class="card-link"><i class="fa fa-globe"></i
+                ></a>
+            <a href="mailto:lars.jermiin@ucd.ie" class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
+</div>
+</div>
+<div class="card-group mb-1">
+    <div class="card">
+        <div class="card-body d-flex flex-column">
+            <h5 class="card-title">AliStat (1.14)</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+                Source code (C++). Software for quantifying the
+                completeness of multiple sequence alignments used in
+                phylogenetic and phylogenomic research
+            </h6>
+            <div class="mt-auto">
+                <a href="https://github.com/thomaskf/AliStat" class="card-link"><i class="fa fa-globe"></i
+                ></a>
+            <a href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
+               class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
+</div>
+<div class="card">
+    <div class="card-body d-flex flex-column">
+        <h5 class="card-title">HAL-HAS (v2.6.4)</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            Source code (C++). Software for identifying optimal
+            models of sequences evolution, which uses mixture
+            models nucleotide sequence evolution that account for
+            rate heterogeneity across sites and across lineages
+        </h6>
+        <div class="mt-auto">
+            <a href="https://github.com/thomaskf/Hal-Has2" class="card-link"><i class="fa fa-globe"></i
+            ></a>
+        <a href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
+           class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i>
+    </a>
+</div>
+</div>
+</div>
+<div class="card">
+    <div class="card-body d-flex flex-column">
+        <h5 class="card-title">Hetero2 (v2.4)</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            Source code (C++). Software to simulate the evolution
+            of nucleotide sequences on phylogenetic trees under
+            heterogeneous Markovian conditions
+        </h6>
+        <div class="mt-auto">
+            <a href="https://github.com/thomaskf/Hetero" class="card-link"><i class="fa fa-globe"></i
+            ></a>
+        <a href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
+           class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i>
+    </a>
+</div>
+</div>
+</div>
+</div>
+<div class="card-group mb-1">
+    <div class="card">
+        <div class="card-body d-flex flex-column">
+            <h5 class="card-title">AliJack (v1.0)</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+                Source code (C++). Software to randomly sample subsets
+                of sequences from a multiple sequence alignment. The
+                jackknife procedure is used.
+            </h6>
+            <div class="mt-auto">
+                <a href="https://github.com/thomaskf/AliJack" class="card-link"><i class="fa fa-globe"></i
+                ></a>
+            <a href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
+               class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
+</div>
+<div class="card">
+    <div class="card-body d-flex flex-column">
+        <h5 class="card-title">CheckJack (v1.0)</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            Source code (C++). Software to compute jackknife
+            scores from trees generated from alignments generated
+            using AliJack.
+        </h6>
+        <div class="mt-auto">
+            <a href="https://github.com/thomaskf/CheckJack" class="card-link"><i class="fa fa-globe"></i
+            ></a>
+        <a href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
+           class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i>
+    </a>
+</div>
+</div>
+</div>
+<div class="card">
+    <div class="card-body d-flex flex-column">
+        <h5 class="card-title">ModelFinder (v1.0)</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            Source code (C++). Software for model selection during
+            phylogenetic analysis of nucleotide and amino acid
+            sequences. ModelFinder is embedded in UQ-TREE and
+            IQ-TREE 2 and can only be access by downloading these
+            programs.
+        </h6>
+        <div class="mt-auto">
+            <a href="http://www.iqtree.org" class="card-link"><i class="fa fa-globe"></i
+            ></a>
+        <a href="mailto:m.bui@anu.edu.au,Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
+           class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i>
+    </a>
+</div>
+</div>
+</div>
+</div>
+<!--<ul>-->
+<!--<li>-->
+<!--Machine learning for protein secondary structure and other-->
+<!--predictions (link to GP site)-->
+<!--</li>-->
+<!--<li>-->
+<!--Protein motif and peptide functional prediction and-->
+<!--analysis tools (bioware.ucd.ie)-->
+<!--</li>-->
+<!--<li>-->
+<!--Tools for sequence/phylogenetic analysis (LJ single link-->
+<!--and clustal.org link).-->
+<!--</li>-->
+<!--</ul>-->
+</div>
+</div>
+</div>
+<br />
+<!-- /second flexrow -->
+</main>
+</div>
+<!-- /container -->
+</div>
+<!-- FOOTER -->
+<footer class="main-footer">
+    <!--<section>-->
+    <!--<h2 class="hidden">Global links</h2>-->
+    <!--<div class="container">-->
+    <!--<div class="fat-footer flexrow">-->
+    <!--<div class="percent-40">-->
+    <!--<h3>Links header</h3>-->
+    <!--<nav>-->
+    <!--<ul>-->
+    <!--<li><a href="index.html">Link 1</a></li>-->
+    <!--<li><a href="index.html">Link 2</a></li>-->
+    <!--<li><a href="index.html">Link 3</a></li>-->
+    <!--<li><a href="index.html">Link 4</a></li>-->
+    <!--</ul>-->
+    <!--</nav>-->
+    <!--</div>-->
+    <!--<div class="percent-40">-->
+    <!--<h3>Links header 2</h3>-->
+    <!--<nav>-->
+    <!--<ul>-->
+    <!--<li><a href="index.html">Link 1</a></li>-->
+    <!--<li><a href="index.html">Link 2</a></li>-->
+    <!--<li><a href="index.html">Link 3</a></li>-->
+    <!--<li><a href="index.html">Link 4</a></li>-->
+    <!--</ul>-->
+    <!--</nav>-->
+    <!--</div>-->
+    <!--<div class="percent-20">-->
+    <!--<div>-->
+    <!--<a href="index.html"-->
+    <!--><img-->
+    <!--src="images/white-orange-logo.png"-->
+    <!--alt="ELIXIR logo"-->
+    <!--title="Home"-->
+    <!--/></a>-->
+    <!--</div>-->
+    <!--<ul class="display-inline">-->
+    <!--<li>-->
+    <!--<a-->
+    <!--href="#"-->
+    <!--class="fa fa-twitter-square"-->
+    <!--title="Twitter"-->
+    <!--></a>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<a-->
+    <!--href="#"-->
+    <!--class="fa fa-linkedin-square"-->
+    <!--title="LinkedIn"-->
+    <!--></a>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<a-->
+    <!--href="#"-->
+    <!--class="fa fa-youtube-square"-->
+    <!--title="YouTube"-->
+    <!--></a>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<a href="#" class="fa fa-flickr" title="Flickr"></a>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</section>-->
+    <section>
+        <div class="container">
+            <div class="thin-footer">
+                <address>
+                    Contact info
+                    <br />
+                    Address line 1, Address line 2
+                    <br />
+                    Tel: 123
+                    456
+                </address>
+                <p>
+                    Copyright statement
+                </p>
+            </div>
+        </div>
+    </section>
+</footer>
+</div>
+<!-- / wrapper -->
+</body>
 </html>
