@@ -1,461 +1,344 @@
 <!DOCTYPE html>
-
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>Home page | ELIXIR Ireland</title>
-		<meta
-		name="description"
-		content="Home page for the ELIXIR website template, demonstrating
-		possible styles and HTML"
-		/>
-		<link
-		href="https://fonts.googleapis.com/css?family=Lato:400,400i,700"
-		rel="stylesheet"
-		/>
-		<link
-		href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-		rel="stylesheet"
-		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-		crossorigin="anonymous"
-		/>
-
-		<link rel="stylesheet" type="text/css" href="css/styles.css" />
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-			crossorigin="anonymous"
-				></script>
-
-		<meta
-		name="viewport"
-		content="width=device-width, initial-scale=1, maximum-scale=1"
-		/>
-	</head>
-
-	<body>
-		<div id="wrapper">
-			<!-- HEADER -->
-			<header class="main-header" id="header">
-				<div class="container">
-					<div class="hidden">
-						<a href="index.html#main-content">Skip to content</a>
-					</div>
-					<div id="logo">
-						<a href="index.html"
-							><img
-							src="images/white-orange-logo.png"
-							alt="ELIXIR logo"
-							title="Home"
-							/></a>
-					</div>
-					<!-- Main nav -->
-					<label
-						class="show-nav"
-						for="nav-checkbox"
-						title="Show main menu"
-						></label>
-					<input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
-					<nav id="main-nav">
-						<ul class="floated-inline">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="training.html">Training</a></li>
-							<li><a href="databases.html">Databases</a></li>
-							<li class="active"><a href="software.html">Software</a></li>
-							<li><a href="platforms.html">Platforms</a></li>
-							<li><a href="events.html">Events</a></li>
-							<li>
-								<a href="elix_ire_funded.html"
-									>Elixir Ireland Funded Projects</a
-								>
-							</li>
-						</ul>
-					</nav>
-
-					<!--<form method="get" action="http://dev.elixir-europe.org/search.php" id="search">-->
-					<!--<label for="checkbox" class="checkbox-label" title="Search"></label>-->
-					<!--<input type='checkbox' id="checkbox" class="checkbox">-->
-					<!--<div>-->
-					<!--<input type="text" name="search" />-->
-					<!--<input type="submit" class="button grey" value="Search" />-->
-					<!--</div>-->
-					<!--</form>-->
-				</div>
-				<!-- /container -->
-			</header>
-			<!-- /HEADER -->
-
-			<!-- MAIN CONTENT AREA -->
-			<div class="body-content one-column">
-				<div class="container">
-					<!-- Main content -->
-					<main class="main-column" id="main-content">
-						<!-- First flexrow -->
-						<div class="flexrow gutters">
-							<div class="percent-100">
-								<div class="tinted">
-									<h2>Software</h2>
-									<p>
-									The following bioinformatics software tools are hosted by
-									Elixir Ireland associated researchers:
-									</p>
-									<table class="table table-striped table-hover">
-										<thead>
-											<tr>
-												<th>Tool</th>
-												<th>Description</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>
-													<a
-														href="https://ribogalaxy.genomicsdatascience.ie/"
-														class="card-link"
-														>RiboGalaxy</a
-													>
-												</td>
-														<td>
-															An instant of Galaxy tailored for ribosome profiling
-															data analysis.<br />
-
-															Maintainer: Pavel Baranov<sup
-																><a href="mailto:p.baranov@ucc.ie" class="card-link"
-																	><i
-																		class="fa fa-envelope"
-																		aria-hidden="true"
-																		></i> </a
-																></sup>
-														</td>
-											</tr>
-											<tr>
-												<td>
-													<a href="http://pausepred.ucc.ie" class="card-link"
-														>PAUSEPRED</a
-													>
-												</td>
-														<td>
-															A very simple applet for predicting ribosome pauses
-															using ribosome profiling data. Not great, but better
-															than nothing and nothing else is available for this
-															purpose, hence the tool remains popular. <br />
-															Maintainer: Pavel Baranov
-															<sup>
-																<a href="mailto:p.baranov@ucc.ie" class="card-link"
-																	><i
-																		class="fa fa-envelope"
-																		aria-hidden="true"
-																		></i> </a
-																></sup>
-														</td>
-											</tr>
-											<tr>
-												<td>
-													<a href="http://trips.ucc.ie" class="card-link"
-														>Trips-viz</a
-													>
-												</td>
-														<td>
-															A computational environment for the analysis and
-															visualisation of public and user-generated ribosome
-															profiling data mapped to transcriptomes.<br />
-															Maintainer: Pavel Baranov
-															<sup>
-																<a href="mailto:p.baranov@ucc.ie" class="card-link"
-																	><i
-																		class="fa fa-envelope"
-																		aria-hidden="true"
-																		></i> </a
-																></sup>
-														</td>
-											</tr>
-											<tr>
-												<td>
-													<a
-														href="https://github.com/orgs/cancergenetics/repositories"
-														class="card-link"
-														>BRCA-Core</a
-													>
-												</td>
-														<td>
-															Source code (Python) to identify protein complexes
-															co-regulated in tumour proteomic samples.<br />
-															Maintainer: Colm Ryan<sup>
-																<a href="mailto:colm.ryan@ucd.ie" class="card-link"
-																	><i
-																		class="fa fa-envelope"
-																		aria-hidden="true"
-																		></i> </a
-																></sup>
-														</td>
-											</tr>
-											<tr>
-												<td>
-													<a
-														href="ttp://github.com/lsjermiin/Homo.v2.1"
-														class="card-link"
-														>Homo (v2.1)</a
-													>
-												</td>
-														<td>
-															Source code (C++). A program for analysing
-															compositional heterogeneity across aligned sequence
-															data (controls the family-wise error rate and the
-															false discovery rate). The software also computes
-															three compositional distances and the p distance.<br />
-
-															Maintainer: Lars Jermiin<sup>
-																<a
-																	href="mailto:lars.jermiin@ucd.ie"
-																	class="card-link"
-																	><i
-																		class="fa fa-envelope"
-																		aria-hidden="true"
-																		></i> </a
-																></sup>
-														</td>
-											</tr>
-											<tr>
-												<td>
-													<a
-														href="http://github.com/lsjermiin/SatuRation.v1.0"
-														class="card-link"
-														>SatuRation (v1.0)</a
-													>
-												</td>
-														<td>
-															Source code (C++). A program designed to estimate the
-															degree of saturation observed between two sequences of
-															nucleotides, genotypes, di-nucleotides, codons or
-															amino acids. <br />
-
-															Maintainer: Lars Jermiin<sup>
-																<a
-																	href="mailto:lars.jermiin@ucd.ie"
-																	class="card-link"
-																	><i
-																		class="fa fa-envelope"
-																		aria-hidden="true"
-																		></i> </a
-																></sup>
-														</td>
-											</tr>
-											<tr>
-												<td>
-													<a
-														href="https://github.com/thomaskf/AliStat"
-														class="card-link"
-														>AliStat (1.14)</a
-													>
-												</td>
-														<td>
-															Source code (C++). Software for quantifying the
-															completeness of multiple sequence alignments used in
-															phylogenetic and phylogenomic research.<br />
-
-															Maintainers: Thomas Wong<sup
-																><a
-																	href="mailto:Thomas.Wong@anu.edu.au"
-																	class="card-link"
-																	><i
-																		class="fa fa-envelope"
-																		aria-hidden="true"
-																		></i> </a></sup
-															>, Lars Jermiin
-															<sup
-																><a
-																	href="mailto:lars.jermiin@ucd.ie"
-																	class="card-link"
-																	><i
-																		class="fa fa-envelope"
-																		aria-hidden="true"
-																		></i> </a
-																></sup>
-														</td>
-											</tr>
-																<tr>
-																	<td>
-																		<a
-																			href="https://github.com/thomaskf/Hal-Has2"
-																			class="card-link"
-																			>HAL-HAS (v2.6.4)</a
-																		>
-																	</td>
-																			<td>
-																				Source code (C++). Software for identifying optimal
-																				models of sequences evolution, which uses mixture
-																				models nucleotide sequence evolution that account for
-																				rate heterogeneity across sites and across lineages.
-																				<br />
-																				Maintainer: Thomas Wong<sup>
-																					<a
-																						href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
-																						class="card-link"
-																						><i
-																							class="fa fa-envelope"
-																							aria-hidden="true"
-																							></i> </a
-																					></sup>
-																			</td>
-																</tr>
-																<tr>
-																	<td>
-																		<a
-																			href="https://github.com/thomaskf/Hetero"
-																			class="card-link"
-																			>Hetero2 (v2.4)</a
-																		>
-																	</td>
-																			<td>
-																				Source code (C++). Software to simulate the evolution
-																				of nucleotide sequences on phylogenetic trees under
-																				heterogeneous Markovian conditions.<br />
-																				Maintainers: Thomas Wong<sup>
-																					<a
-																						href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
-																						class="card-link"
-																						><i
-																							class="fa fa-envelope"
-																							aria-hidden="true"
-																							></i> </a
-																					></sup>
-																			</td>
-																</tr>
-																<tr>
-																	<td>
-																		<a
-																			href="https://github.com/thomaskf/AliJack"
-																			class="card-link"
-																			>AliJack (v1.0)</a>
-																	</td>
-																	<td>
-																		Source code (C++). Software to randomly sample subsets
-																		of sequences from a multiple sequence alignment. The
-																		jackknife procedure is used.<br />
-																		Maintainer: Thomas Wong<sup>
-																			<a
-																				href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
-																				class="card-link"
-																				><i
-																					class="fa fa-envelope"
-																					aria-hidden="true"
-																					></i> </a
-																			></sup>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<a
-																			href="https://github.com/thomaskf/CheckJack"
-																			class="card-link"
-																			>CheckJack (v1.0)</a
-																		>
-																	</td>
-																			<td>
-																				Source code (C++). Software to compute jackknife
-																				scores from trees generated from alignments generated
-																				using AliJack.<br />
-																				Maintainer: Thomas Wong
-																				<sup>
-																					<a
-																						href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
-																						class="card-link"
-																						><i
-																							class="fa fa-envelope"
-																							aria-hidden="true"
-																							></i> </a
-																					></sup>
-																			</td>
-																</tr>
-																<tr>
-																	<td>
-																		<a href="http://www.iqtree.org" class="card-link"
-																			>ModelFinder (v1.0)</a
-																		>
-																	</td>
-																			<td>
-																				Source code (C++). Software for model selection during
-																				phylogenetic analysis of nucleotide and amino acid
-																				sequences. ModelFinder is embedded in UQ-TREE and
-																				IQ-TREE 2 and can only be access by downloading these
-																				programs.<br />
-																				Maintainers: Minh Bui
-																				<sup>
-																					<a
-																						href="mailto:m.bui@anu.edu.au"
-																						class="card-link"
-																						><i
-																							class="fa fa-envelope"
-																							aria-hidden="true"
-																							></i> </a></sup
-																				>, Thomas Wong<sup><a
-																						href="mailto:Thomas.Wong@anu.edu.au"
-																						class="card-link"
-																						><i
-																							class="fa fa-envelope"
-																							aria-hidden="true"
-																							></i> </a></sup
-																				>
-																				</sup>, Lars Jermiin <sup><a
-																						href="mailto:lars.jermiin@ucd.ie"
-																						class="card-link"
-																						><i
-																							class="fa fa-envelope"
-																							aria-hidden="true"
-																							></i> </a></sup
-																				></sup>
-																			</td>
-																</tr>
-										</tbody>
-									</table>
-
-									<!--<ul>-->
-									<!--<li>-->
-									<!--Machine learning for protein secondary structure and other-->
-									<!--predictions (link to GP site)-->
-									<!--</li>-->
-									<!--<li>-->
-									<!--Protein motif and peptide functional prediction and-->
-									<!--analysis tools (bioware.ucd.ie)-->
-									<!--</li>-->
-
-									<!--<li>-->
-									<!--Tools for sequence/phylogenetic analysis (LJ single link-->
-									<!--and clustal.org link).-->
-									<!--</li>-->
-									<!--</ul>-->
-								</div>
-							</div>
-						</div>
-						<br />
-						<!-- /second flexrow -->
-					</main>
-				</div>
-				<!-- /container -->
-			</div>
-
-			<!-- FOOTER -->
-			<footer class="main-footer">
-
-				<section>
-					<div class="container">
-						<div class="thin-footer">
-							<address>
-								Elixir Ireland
-								<br />
-								Head of Node: Denis Shields
-								<br />
-								UCD Conway Institute of Biomolecular and Biomedical Research
-								<br />
-								University College Dublin, Dublin 4
-								<br />
-								<a href="tel:+353 7166735">☏: +353 7166735</a>
-							</address>
-						</div>
-					</div>
-				</section>
-			</footer>
-		</div>
-		<!-- / wrapper -->
-	</body>
-</html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Home page | ELIXIR Ireland</title>
+        <meta name="description"
+              content="Home page for the ELIXIR website template, demonstrating possible styles and HTML"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700"
+              rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+              crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- HEADER -->
+            <header class="main-header" id="header">
+                <div class="container">
+                    <div class="hidden">
+                        <a href="index.html#main-content">Skip to content</a>
+                    </div>
+                    <div id="logo">
+                        <a href="index.html">
+                            <img src="images/white-orange-logo.png" alt="ELIXIR logo" title="Home" />
+                        </a>
+                    </div>
+                    <!-- Main nav -->
+                    <label class="show-nav" for="nav-checkbox" title="Show main menu"></label>
+                    <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
+                    <nav id="main-nav">
+                        <ul class="floated-inline">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="training.html">Training</a>
+                            </li>
+                            <li>
+                                <a href="databases.html">Databases</a>
+                            </li>
+                            <li class="active">
+                                <a href="software.html">Software</a>
+                            </li>
+                            <li>
+                                <a href="platforms.html">Platforms</a>
+                            </li>
+                            <li>
+                                <a href="events.html">Events</a>
+                            </li>
+                            <li>
+                                <a href="news.html">News</a>
+                            </li>
+                            <li>
+                                <a href="elix_ire_funded.html">Elixir Ireland Funded Projects</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--<form method="get"
+      action="http://dev.elixir-europe.org/search.php"
+      id="search">-->
+                        <!--<label for="checkbox" class="checkbox-label" title="Search"></label>-->
+                        <!--<input type='checkbox' id="checkbox" class="checkbox">-->
+                        <!--<div>-->
+                        <!--<input type="text" name="search" />-->
+                        <!--<input type="submit" class="button grey" value="Search" />-->
+                        <!--</div>-->
+                        <!--</form>-->
+                    </div>
+                    <!-- /container -->
+                </header>
+                <!-- /HEADER -->
+                <!-- MAIN CONTENT AREA -->
+                <div class="body-content one-column">
+                    <div class="container">
+                        <!-- Main content -->
+                        <main class="main-column" id="main-content">
+                            <!-- First flexrow -->
+                            <div class="flexrow gutters">
+                                <div class="percent-100">
+                                    <div class="tinted">
+                                        <h2>Software</h2>
+                                        <p>
+                                            The following bioinformatics software tools are hosted by
+                                            Elixir Ireland associated researchers:
+                                        </p>
+                                        <table class="table table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Tool</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a href="https://ribogalaxy.genomicsdatascience.ie/" class="card-link">RiboGalaxy</a
+                                                            >
+                                                        </td>
+                                                        <td>
+                                                            An instant of Galaxy tailored for ribosome profiling
+                                                            data analysis.
+                                                            <br />
+                                                            Maintainer: Pavel Baranov<sup ><a href="mailto:p.baranov@ucc.ie" class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i> </a
+                                                        ></sup>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="http://pausepred.ucc.ie" class="card-link">PAUSEPRED</a
+                                                            >
+                                                        </td>
+                                                        <td>
+                                                            A very simple applet for predicting ribosome pauses
+                                                            using ribosome profiling data. Not great, but better
+                                                            than nothing and nothing else is available for this
+                                                            purpose, hence the tool remains popular.
+                                                            <br />
+                                                            Maintainer: Pavel Baranov
+                                                            <sup>
+                                                                <a href="mailto:p.baranov@ucc.ie" class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i> </a
+                                                                ></sup>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <a href="http://trips.ucc.ie" class="card-link">Trips-viz</a
+                                                                    >
+                                                                </td>
+                                                                <td>
+                                                                    A computational environment for the analysis and
+                                                                    visualisation of public and user-generated ribosome
+                                                                    profiling data mapped to transcriptomes.
+                                                                    <br />
+                                                                    Maintainer: Pavel Baranov
+                                                                    <sup>
+                                                                        <a href="mailto:p.baranov@ucc.ie" class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i> </a
+                                                                        ></sup>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="https://github.com/orgs/cancergenetics/repositories"
+                                                                           class="card-link">BRCA-Core</a
+                                                                            >
+                                                                        </td>
+                                                                        <td>
+                                                                            Source code (Python) to identify protein complexes
+                                                                            co-regulated in tumour proteomic samples.
+                                                                            <br />
+                                                                            Maintainer: Colm Ryan<sup>
+                                                                            <a href="mailto:colm.ryan@ucd.ie" class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i> </a
+                                                                            ></sup>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="ttp://github.com/lsjermiin/Homo.v2.1" class="card-link">Homo (v2.1)</a
+                                                                                >
+                                                                            </td>
+                                                                            <td>
+                                                                                Source code (C++). A program for analysing
+                                                                                compositional heterogeneity across aligned sequence
+                                                                                data (controls the family-wise error rate and the
+                                                                                false discovery rate). The software also computes
+                                                                                three compositional distances and the p distance.
+                                                                                <br />
+                                                                                Maintainer: Lars Jermiin<sup>
+                                                                                <a href="mailto:lars.jermiin@ucd.ie" class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i> </a
+                                                                                ></sup>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <a href="http://github.com/lsjermiin/SatuRation.v1.0" class="card-link">SatuRation (v1.0)</a
+                                                                                    >
+                                                                                </td>
+                                                                                <td>
+                                                                                    Source code (C++). A program designed to estimate the
+                                                                                    degree of saturation observed between two sequences of
+                                                                                    nucleotides, genotypes, di-nucleotides, codons or
+                                                                                    amino acids.
+                                                                                    <br />
+                                                                                    Maintainer: Lars Jermiin<sup>
+                                                                                    <a href="mailto:lars.jermiin@ucd.ie" class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i> </a
+                                                                                    ></sup>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <a href="https://github.com/thomaskf/AliStat" class="card-link">AliStat (1.14)</a
+                                                                                        >
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        Source code (C++). Software for quantifying the
+                                                                                        completeness of multiple sequence alignments used in
+                                                                                        phylogenetic and phylogenomic research.
+                                                                                        <br />
+                                                                                        Maintainers: Thomas Wong<sup ><a href="mailto:Thomas.Wong@anu.edu.au" class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i> </a></sup
+                                                                                        >, Lars Jermiin
+                                                                                        <sup ><a href="mailto:lars.jermiin@ucd.ie" class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i> </a
+                                                                                        ></sup>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <a href="https://github.com/thomaskf/Hal-Has2" class="card-link">HAL-HAS (v2.6.4)</a
+                                                                                            >
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            Source code (C++). Software for identifying optimal
+                                                                                            models of sequences evolution, which uses mixture
+                                                                                            models nucleotide sequence evolution that account for
+                                                                                            rate heterogeneity across sites and across lineages.
+                                                                                            <br />
+                                                                                            Maintainer: Thomas Wong<sup>
+                                                                                            <a href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
+                                                                                               class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i> </a
+                                                                                            ></sup>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <a href="https://github.com/thomaskf/Hetero" class="card-link">Hetero2 (v2.4)</a
+                                                                                                >
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                Source code (C++). Software to simulate the evolution
+                                                                                                of nucleotide sequences on phylogenetic trees under
+                                                                                                heterogeneous Markovian conditions.
+                                                                                                <br />
+                                                                                                Maintainers: Thomas Wong<sup>
+                                                                                                <a href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
+                                                                                                   class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i> </a
+                                                                                                ></sup>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <a href="https://github.com/thomaskf/AliJack" class="card-link">AliJack (v1.0)</a>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                Source code (C++). Software to randomly sample subsets
+                                                                                                of sequences from a multiple sequence alignment. The
+                                                                                                jackknife procedure is used.
+                                                                                                <br />
+                                                                                                Maintainer: Thomas Wong<sup>
+                                                                                                <a href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
+                                                                                                   class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i> </a
+                                                                                                ></sup>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <a href="https://github.com/thomaskf/CheckJack" class="card-link">CheckJack (v1.0)</a
+                                                                                                    >
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    Source code (C++). Software to compute jackknife
+                                                                                                    scores from trees generated from alignments generated
+                                                                                                    using AliJack.
+                                                                                                    <br />
+                                                                                                    Maintainer: Thomas Wong
+                                                                                                    <sup>
+                                                                                                        <a href="mailto:Thomas.Wong@anu.edu.au,lars.jermiin@ucd.ie"
+                                                                                                           class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i> </a
+                                                                                                        ></sup>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>
+                                                                                                        <a href="http://www.iqtree.org" class="card-link">ModelFinder (v1.0)</a
+                                                                                                            >
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            Source code (C++). Software for model selection during
+                                                                                                            phylogenetic analysis of nucleotide and amino acid
+                                                                                                            sequences. ModelFinder is embedded in UQ-TREE and
+                                                                                                            IQ-TREE 2 and can only be access by downloading these
+                                                                                                            programs.
+                                                                                                            <br />
+                                                                                                            Maintainers: Minh Bui
+                                                                                                            <sup>
+                                                                                                                <a href="mailto:m.bui@anu.edu.au" class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i> </a></sup
+                                                                                                                    >, Thomas Wong<sup><a href="mailto:Thomas.Wong@anu.edu.au" class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i> </a></sup
+                                                                                                                    >
+                                                                                                                </sup>, Lars Jermiin <sup><a href="mailto:lars.jermiin@ucd.ie" class="card-link"><i class="fa fa-envelope" aria-hidden="true"></i> </a></sup
+                                                                                                            ></sup>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                            <!--<ul>-->
+                                                                                            <!--<li>-->
+                                                                                            <!--Machine learning for protein secondary structure and other-->
+                                                                                            <!--predictions (link to GP site)-->
+                                                                                            <!--</li>-->
+                                                                                            <!--<li>-->
+                                                                                            <!--Protein motif and peptide functional prediction and-->
+                                                                                            <!--analysis tools (bioware.ucd.ie)-->
+                                                                                            <!--</li>-->
+                                                                                            <!--<li>-->
+                                                                                            <!--Tools for sequence/phylogenetic analysis (LJ single link-->
+                                                                                            <!--and clustal.org link).-->
+                                                                                            <!--</li>-->
+                                                                                            <!--</ul>-->
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br />
+                                                                                <!-- /second flexrow -->
+                                                                            </main>
+                                                                        </div>
+                                                                        <!-- /container -->
+                                                                    </div>
+                                                                    <!-- FOOTER -->
+                                                                    <footer class="main-footer">
+                                                                        <section>
+                                                                            <div class="container">
+                                                                                <div class="thin-footer">
+                                                                                    <address>
+                                                                                        Elixir Ireland
+                                                                                        <br />
+                                                                                        Head of Node: Denis Shields
+                                                                                        <br />
+                                                                                        UCD Conway Institute of Biomolecular and Biomedical Research
+                                                                                        <br />
+                                                                                        University College Dublin, Dublin 4
+                                                                                        <br />
+                                                                                        <a href="tel:+353 7166735">☏: +353 7166735</a>
+                                                                                    </address>
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                                                                    </footer>
+                                                                </div>
+                                                                <!-- / wrapper -->
+                                                            </body>
+                                                        </html>
