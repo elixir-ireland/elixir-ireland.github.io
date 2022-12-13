@@ -3240,7 +3240,7 @@ a:hover {
 
 .subnav ul a {
   border-bottom: 1px solid #ebebeb;
-  color: #333;
+  color: #047eaa;
   position: relative;
 }
 .subnav ul a.active {
@@ -4359,6 +4359,11 @@ input.orange:hover {
     min-height: 100%;
     padding-bottom: 350px;
   }
+
+  .subnav ul a:hover {
+    color: #f47d20;
+  }
+
   a:hover {
     color: #f47d20;
     text-decoration: none;
