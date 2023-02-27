@@ -4376,4 +4376,12 @@ input.orange:hover {
   }
 }
 
+#progress-bar {
+  --progress: 100;
+  height: 5px;
+  position: fixed;
+  width: var(--progress);
+  background-color: orange;
+}
+
 /*# sourceMappingURL=styles.css.map */
