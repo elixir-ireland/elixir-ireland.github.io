@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 html,
 body,
 div,
@@ -152,6 +153,7 @@ html {
   font-weight: normal;
   font-style: normal;
 }
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -194,6 +196,7 @@ html {
   margin-left: 2.14286em;
   list-style-type: none;
 }
+
 .fa-ul > li {
   position: relative;
 }
@@ -205,6 +208,7 @@ html {
   top: 0.14286em;
   text-align: center;
 }
+
 .fa-li.fa-lg {
   left: -1.85714em;
 }
@@ -226,6 +230,7 @@ html {
 .fa.fa-pull-left {
   margin-right: 0.3em;
 }
+
 .fa.fa-pull-right {
   margin-left: 0.3em;
 }
@@ -242,6 +247,7 @@ html {
 .fa.pull-left {
   margin-right: 0.3em;
 }
+
 .fa.pull-right {
   margin-left: 0.3em;
 }
@@ -261,21 +267,25 @@ html {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
+
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
+
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   -webkit-transform: rotate(90deg);
@@ -3243,9 +3253,11 @@ a:hover {
   color: #047eaa;
   position: relative;
 }
+
 .subnav ul a.active {
   color: #f47d21;
 }
+
 .subnav ul a.collapsed:before {
   font-family: FontAwesome;
   content: "\f0da\00a0";
@@ -3254,6 +3266,7 @@ a:hover {
   position: absolute;
   left: 5px;
 }
+
 .subnav ul a.expanded:before {
   font-family: FontAwesome;
   content: "\f0d7\00a0";
@@ -3323,6 +3336,7 @@ h4 {
   padding-left: 40px;
   margin: 0.5em 0 1.5em;
 }
+
 .main-column ul li:before {
   font-family: "FontAwesome";
   content: "\f111";
@@ -3332,13 +3346,16 @@ h4 {
   position: relative;
   top: -2px;
 }
+
 .main-column ul ul {
   padding-left: 30px;
   margin: 0;
 }
+
 .main-column ul ul li:before {
   content: "\f10c";
 }
+
 .main-column ul.display-inline li:before {
   content: none;
 }
@@ -3347,6 +3364,7 @@ h4 {
   margin: 0.5em 0 1.5em;
   padding-left: 40px;
 }
+
 .main-column ol ol {
   margin: 0;
 }
@@ -3354,6 +3372,7 @@ h4 {
 .xbp li {
   padding-bottom: 0.75em;
 }
+
 .xbp li ul li {
   padding-bottom: 0.25em;
 }
@@ -3478,16 +3497,19 @@ table {
   width: 100%;
   margin-bottom: 1.25em;
 }
+
 table td,
 table th {
   padding: 8px 7px;
 }
+
 table th {
   text-align: left;
   font-weight: bold;
   vertical-align: middle;
   border-bottom: 2px solid #055472;
 }
+
 table td {
   vertical-align: top;
   border-bottom: 1px solid #ebebeb;
@@ -3500,9 +3522,11 @@ form .field {
   margin: 1.5em 0;
   clear: both;
 }
+
 form .field * {
   vertical-align: top;
 }
+
 form .field.checkbox * {
   vertical-align: baseline;
 }
@@ -3512,6 +3536,7 @@ form .field.checkbox * {
 .field.inline-label textarea {
   display: inline-block;
 }
+
 .field.inline-label label {
   margin: 2px 5px 0 0;
 }
@@ -3544,6 +3569,7 @@ header input[type="submit"] {
   color: #333;
   background: #ebebeb;
 }
+
 header input[type="submit"]:hover {
   color: #fefefe;
   background: #f47d21;
@@ -3685,6 +3711,7 @@ a[href$=".pdf"] {
   padding-right: 3px;
   background-image: 0;
 }
+
 a[href$=".pdf"]:after {
   font-family: FontAwesome;
   content: "\00a0\f1c1";
@@ -3720,6 +3747,7 @@ a.txt:after {
   margin-top: 40px;
   color: #fefefe;
 }
+
 .main-footer img {
   width: 150px;
   margin-bottom: 0.875rem;
@@ -3728,6 +3756,7 @@ a.txt:after {
 .main-footer .flexrow {
   flex-direction: column;
 }
+
 .main-footer .flexrow .percent-40,
 .main-footer .flexrow .percent-20 {
   padding-top: 15px;
@@ -3749,6 +3778,7 @@ a.txt:after {
   *overflow: visible;
   *zoom: 1;
 }
+
 .main-footer section:last-child address {
   float: right;
   width: 50%;
@@ -3765,18 +3795,22 @@ a.txt:after {
     display: none;
   }*/
 }
+
 .main-header .container {
   position: relative;
 }
+
 .main-header img {
   position: absolute;
   top: 50px;
   width: 150px;
 }
+
 .main-header .checkbox,
 .main-header .nav-checkbox {
   display: none;
 }
+
 .main-header .show-nav {
   width: 100%;
   background: #333;
@@ -3786,9 +3820,11 @@ a.txt:after {
   position: absolute;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
+
 .main-header .show-nav:hover {
   cursor: pointer;
 }
+
 .main-header .show-nav:before {
   content: "\f0c9";
   font-family: FontAwesome;
@@ -3798,6 +3834,7 @@ a.txt:after {
   top: 5px;
   left: 10px;
 }
+
 .main-header nav {
   display: none;
   position: absolute;
@@ -3809,6 +3846,7 @@ a.txt:after {
   border-top: 1px solid #848484;
   box-shadow: 3px 3px 8px #848484;
 }
+
 .main-header nav a {
   color: #fefefe;
   font-size: 0.875rem;
@@ -3819,33 +3857,41 @@ a.txt:after {
   display: block;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
+
 .main-header nav a:active {
   color: #f47d21;
   text-decoration: none;
 }
+
 .main-header nav a:hover {
   color: #f47d21;
   text-decoration: none;
 }
+
 .main-header nav .active a {
   color: #f47d21;
 }
+
 .main-header nav .floated-inline li {
   float: none;
 }
+
 .main-header input.nav-checkbox:checked ~ nav {
   display: block;
 }
+
 .main-header form {
   position: absolute;
   right: 10px;
   top: 68px;
   border-radius: 6px;
 }
+
 .main-header form .checkbox,
 .main-header form div {
   display: none;
 }
+
 .main-header form .checkbox-label {
   display: block;
   width: 35px;
@@ -3857,9 +3903,11 @@ a.txt:after {
   border-radius: 5px;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
+
 .main-header form .checkbox-label:hover {
   cursor: pointer;
 }
+
 .main-header form .checkbox-label:before {
   content: "\f002";
   font-family: FontAwesome;
@@ -3870,6 +3918,7 @@ a.txt:after {
   left: 6px;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
+
 .main-header form .checkbox:checked + div {
   display: block;
   margin-top: 47px;
@@ -3966,18 +4015,23 @@ a.txt:after {
   padding-left: 0;
   list-style-type: none;
 }
+
 .main-column .floated-inline li {
   float: left;
 }
+
 .main-column .floated-inline li:before {
   content: none;
 }
+
 .main-column .floated-inline a {
   display: block;
 }
+
 .main-column .floated-inline.right li {
   padding-left: 10px;
 }
+
 .main-column .floated-inline.left li {
   padding-right: 10px;
 }
@@ -4008,10 +4062,12 @@ a.txt:after {
 .display-inline {
   clear: both;
 }
+
 .display-inline li {
   display: inline;
   margin-right: -4px;
 }
+
 .display-inline li:last-child {
   margin-right: 0;
 }
@@ -4019,6 +4075,7 @@ a.txt:after {
 .separated li:after {
   content: "  |  ";
 }
+
 .separated li:last-child:after {
   content: "";
 }
@@ -4039,11 +4096,13 @@ a.txt:after {
   		// This is for when we do:
   		*/
 }
+
 .flexrow .tinted,
 .flexrow .padded {
   padding: 20px;
   margin: 0;
 }
+
 .flexrow div div {
   width: 100%;
 }
@@ -4052,21 +4111,26 @@ footer .flexrow div {
   margin: 0;
   display: inline;
 }
+
 footer .flexrow div:last-child {
   text-align: center;
   padding-right: 0;
 }
+
 footer .flexrow div .display-inline li {
   padding-right: 20px;
 }
+
 footer .flexrow div .display-inline li:last-child {
   padding-right: 0;
 }
+
 footer .fa {
   font-size: 1.75rem;
   color: #848484;
   transition: color 0.2s;
 }
+
 footer .fa:hover {
   color: #f47d21;
   text-decoration: none;
@@ -4124,6 +4188,7 @@ input[type="submit"] {
   font-size: 1rem;
   font-family: "Lato", Verdana, Helvetica, sans-serif;
 }
+
 .button a:hover,
 .button a:active,
 button:hover,
@@ -4140,6 +4205,7 @@ button.blue,
 input.blue {
   background: #056482;
 }
+
 .blue a:hover,
 button.blue:hover,
 input.blue:hover {
@@ -4151,6 +4217,7 @@ button.orange,
 input.orange {
   background: #f47d21;
 }
+
 .orange a:hover,
 button.orange:hover,
 input.orange:hover {
@@ -4177,6 +4244,7 @@ input.orange:hover {
   display: inline-block;
   margin-right: 10px;
 }
+
 .buttons-inline.align-right div {
   margin-right: 0;
   margin-left: 10px;
@@ -4188,6 +4256,7 @@ input.orange:hover {
     margin-bottom: 1rem;
   }
 }
+
 @media (min-width: 700px) {
   body {
     font-size: 1rem;
@@ -4230,10 +4299,12 @@ input.orange:hover {
   .main-header {
     height: 93px;
   }
+
   .main-header .show-nav,
   .main-header .checkbox-label {
     visibility: hidden;
   }
+
   .main-header form {
     position: absolute;
     right: 10px;
@@ -4243,9 +4314,11 @@ input.orange:hover {
     padding: 0;
     box-shadow: none;
   }
+
   .main-header form div {
     display: block;
   }
+
   .main-header nav {
     visibility: visible;
     display: block;
@@ -4255,13 +4328,16 @@ input.orange:hover {
     border-top: 0;
     box-shadow: none;
   }
+
   .main-header nav .floated-inline li {
     float: left;
   }
+
   .main-header nav a {
     padding: 0 0.75rem;
     border-bottom: 0;
   }
+
   .main-header img {
     position: absolute;
     top: 18px;
@@ -4280,14 +4356,17 @@ input.orange:hover {
     		// This is for when we do:
     		*/
   }
+
   .flexrow .tinted,
   .flexrow .padded {
     padding: 20px;
     margin: 0;
   }
+
   .flexrow > div {
     display: flex;
   }
+
   .flexrow div div {
     width: 100%;
   }
@@ -4295,6 +4374,7 @@ input.orange:hover {
   .gutters {
     margin: 0 0 0 -1em;
   }
+
   .gutters > div {
     padding: 1em 0 0 1em;
   }
@@ -4302,14 +4382,17 @@ input.orange:hover {
   .main-footer .flexrow {
     flex-direction: row;
   }
+
   .main-footer .flexrow .percent-40 {
     width: 40%;
     padding-right: 20px;
   }
+
   .main-footer .flexrow .percent-20 {
     width: 20%;
   }
 }
+
 @media (min-width: 960px) {
   .container {
     margin: 0 auto;
@@ -4368,6 +4451,7 @@ input.orange:hover {
     color: #f47d20;
     text-decoration: none;
   }
+
   footer {
     position: absolute;
     bottom: 0;
@@ -4382,6 +4466,61 @@ input.orange:hover {
   position: fixed;
   width: var(--progress);
   background-color: orange;
+}
+
+/*Slide show*/
+
+.slideshow-container {
+  position: relative;
+  max-width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+}
+
+.slideshow-container img {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.slideshow-container img.active {
+  display: block;
+}
+.slideshow-container .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+.slideshow-container .prev,
+.slideshow-container .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+
+.slideshow-container .prev {
+  left: 0;
+}
+
+.slideshow-container .next {
+  right: 0;
+}
+
+.slideshow-container .prev:hover,
+.slideshow-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /*# sourceMappingURL=styles.css.map */
