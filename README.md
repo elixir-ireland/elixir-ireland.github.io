@@ -1,6 +1,6 @@
 # About
 
-This is the official website of [ELIXIR Ireland](https://elixir-ireland.ie).
+This is the official GitHub repository of [ELIXIR Ireland](https://elixir-ireland.ie).
 
 # Issue reports and suggestions
 
