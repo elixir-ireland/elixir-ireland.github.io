@@ -1,4 +1,10 @@
-### Hi there 👋
+# About
+
+This is the official website of [ELIXIR Ireland](https://elixir-ireland.ie).
+
+# Issue reports and suggestions
+
+If you have identified an issue or have any suggestions to improve the site, please [open an issue](https://github.com/elixir-ireland/elixir-ireland.github.io/issues/new) or [create a pull request](https://github.com/elixir-ireland/elixir-ireland.github.io/pulls).
 
 <!--
 **elixir-ireland/elixir-ireland** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
