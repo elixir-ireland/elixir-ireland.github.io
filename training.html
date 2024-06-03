@@ -10,11 +10,26 @@
     .button-container {
       display: flex;
       justify-content: center;
-      margin-top: 50px;
+      margin-top: 40px; /* Increased margin to prevent overlap with logo */
     }
 
     .button {
       margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .orange-button {
+      background-color: orange;
+      border-color: orange;
+      color: white;
+    }
+
+    .blue-button {
+      background-color: #023452;
+      border-color: #023452;
+      color: white;
     }
 
     .content {
@@ -26,7 +41,7 @@
     .active {
       display: block;
     }
-    
+
     .two-images {
       display: flex;
       flex-flow: row nowrap;
@@ -36,15 +51,18 @@
     .half-width {
       width: 100%;
     }
+    
     .three-images {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    width: 100%;
-  }
-     .one-third-width {
-    width: 33.33%;
-  }
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .one-third-width {
+      width: 33.33%;
+    }
+
     .main {
       display: grid;
       padding: 2rem;
@@ -55,14 +73,17 @@
       margin: 0 auto;
       font: 500 100%/1.5 system-ui;
     }
+
     table {
       width: 100%;
       border-collapse: collapse;
     }
+
     th, td {
       padding: 10px;
       text-align: center;
     }
+
     th {
       background-color: #023452;
       color: white;
@@ -72,243 +93,124 @@
   </style>
 </head>
 <body>
-   <div id="wrapper">
-      <!-- HEADER -->
-      <header class="main-header" id="header">
-        <div class="container">
-          <div class="hidden">
-            <a href="index.html#main-content">Skip to content</a>
-          </div>
-          <div id="logo">
-            <a href="index.html">
-              <img
-                src="images/white-orange-logo.png"
-                alt="ELIXIR logo"
-                title="Home"
-              />
-            </a>
-          </div>
-          <!-- Main nav -->
-          <label
-            class="show-nav"
-            for="nav-checkbox"
-            title="Show main menu"
-          ></label>
-          <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
-          <nav id="main-nav">
-            <ul class="floated-inline">
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li class="active">
-                <a href="training.html">Training</a>
-              </li>
-              <li>
-                <a href="databases.html">Databases</a>
-              </li>
-              <li>
-                <a href="software.html">Software</a>
-              </li>
-              <li>
-                <a href="platforms.html">Platforms</a>
-              </li>
-              <li>
-                <a href="events.html">Events</a>
-              </li>
-              <li>
-                <a href="news.html">News</a>
-              </li>
-              <li>
-                <a href="elix_ire_funded.html"
-                  >ELIXIR Ireland Funded Projects</a
-                >
-              </li>
-            </ul>
-          </nav>
-          <!--<form method="get"
+  <div id="wrapper">
+    <!-- HEADER -->
+    <header class="main-header" id="header">
+      <div class="container">
+        <div class="hidden">
+          <a href="index.html#main-content">Skip to content</a>
+        </div>
+        <div id="logo">
+          <a href="index.html">
+            <img src="images/white-orange-logo.png" alt="ELIXIR logo" title="Home" />
+          </a>
+        </div>
+        <!-- Main nav -->
+        <label class="show-nav" for="nav-checkbox" title="Show main menu"></label>
+        <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
+        <nav id="main-nav">
+          <ul class="floated-inline">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li class="active">
+              <a href="training.html">Training</a>
+            </li>
+            <li>
+              <a href="databases.html">Databases</a>
+            </li>
+            <li>
+              <a href="software.html">Software</a>
+            </li>
+            <li>
+              <a href="platforms.html">Platforms</a>
+            </li>
+            <li>
+              <a href="events.html">Events</a>
+            </li>
+            <li>
+              <a href="news.html">News</a>
+            </li>
+            <li>
+              <a href="elix_ire_funded.html">ELIXIR Ireland Funded Projects</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <!-- /container -->
     </header>
     <!-- /HEADER -->
     <!-- MAIN CONTENT AREA -->
     <div class="container">
-    <div class="button-container">
-      <button style="background-color: orange; border-color: orange" class="button" onclick="showContent('Home')">ELIXIR Ireland Training</button>
-      <button style="background-color: orange; border-color: orange" class="button" onclick="showContent('DMP')">Data Management Planning Resources</button>
-      <button style="background-color: orange; border-color: orange" class="button" onclick="showContent('Events')">Training Events</button>
-    </div>
 
-    <div id="Home" class="content active">
-      <h2>What we provide</h2>
-      <p>ELIXIR Ireland offers training in fundamental data science skills for life scientists, such as R analysis and data management planning.</p> 
-        <p>Our training primarily focuses on offering courses to over 100 PhD students within the <a href="https://genomicsdatascience.ie">Science Foundation Ireland (SFI) Centre for Research Training in Genomics Data Science</a> program.</p>
-      <h2 class="no-anchor text-center mb-3">Training Team</h2>
-      <div class="three-images">
-    <figure class="one-third-width">
-      <img src="images/images.png" class="card-img-top h-icon-5 mx-auto" alt="Trainer"  style="width:500px;height:500px;">
-      <figcaption>Maria Doyle <sup><a href="mailto:trainer1@ucd.ie"><i class="fa fa-envelope" aria-hidden="true"></i></a></sup></figcaption>
-      <figcaption>Training Coordinator</figcaption>
-      <figcaption>University of Limerick</figcaption>
-    </figure>
-    <figure class="one-third-width">
-      <img src="images/LSJermiin.jpg" class="card-img-top h-icon-5 mx-auto"  style="width:500px;height:500px;">
-      <figcaption>Lars Jermiin <sup><a href="mailto:lars.jermiin@universityofgalway.ie"><i class="fa fa-envelope" aria-hidden="true"></i></a></sup></figcaption>
-      <figcaption>Data Stewardship Manager</figcaption>
-      <figcaption>University of Galway</figcaption>
-    </figure>
-    <figure class="one-third-width">
-      <img src="images/sc.jpg" class="card-img-top h-icon-5 mx-auto"  style="width:500px;height:500px;">
-      <figcaption>Siobhan Cleary <sup><a href="mailto:siobhan.cleary@ucd.ie"><i class="fa fa-envelope" aria-hidden="true"></i></a></sup></figcaption>
-      <figcaption>Research Data Management Coordinator</figcaption>
-      <figcaption>University College Dublin</figcaption>
-    </figure>
-  </div>
-    </div>
-
-    <div id="DMP" class="content">
-      <h2>Data Management Planning Resources and Training Material</h2>
-      <table>
-    <tr>
-      <th>Title</th>
-      <th>Trainer</th>
-      <th>Date</th>
-      <th>Download</th>
-    </tr>
-    <tr>
-      <td>Research Data Management & Data Management Planning</td>
-      <td>Lars Jermiin</td>
-      <td>Feb 2023</td>
-      <td><a href="pdfs/RDM-DMP_2023_CRT-LSJermiin.pdf" target="_blank"> </a> </td>
-    </tr>
-       </table>    
-     <!-- <object data="https://clearysi.github.io/pdfs/RDM-DMP_2023_CRT-LSJermiin.pdf" type="application/pdf" width="100%" height="500px"></object> -->
-      <p></p>
-
-           <h3> Example Data Management Plans</h3>
-      <table>
-    <tr>
-      <th>Title</th>
-      <th>Is this a Mock Plan?</th>
-      <th>Template Used</th>
-      <th>Institution</th>
-      <th>DMP Tool Used</th>
-      <th>Download</th>
-    </tr>
-    <tr>
-      <td>Mock Human RNA-Seq DMP</td>
-      <td>Y</td>
-      <td>Health Research Board</td>
-      <td>UCD</td>
-      <td>DMPOnline</td>
-      <td><a href="pdfs/Mock_DMP_for_RNA-Seq_Gene_Expression_Experiment.pdF_NA" target="_blank" > </a> </td>
-    </tr>
-    <tr>
-      <td>Mock Human RNA-Seq DMP</td>
-      <td>Y</td>
-      <td>Open Science</td>
-      <td>NA</td>
-      <td>DSW</td>
-      <td><a href="pdfs/Mock_Human_RNA-Seq_DMP_OpenScience_Template_DSW.pdf_NA" target="_blank"> </a> </td>
-    </tr>
-  </table>
-       
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      <h3> ELIXIR Tools for Data Management </h3>
-      <main>
-   <!--  <div class="pdf-row"> -->
-      <!--    <div class="image-container">-->
+      <div id="Home" class="content active">
+        <h2>What we provide</h2>
+        <p>ELIXIR Ireland offers training in fundamental data science skills for life scientists, such as R analysis and data management planning. We aim to create a dynamic learning and teaching community in Ireland, and we'd love for you to join us!</p>
+<p>Our training primarily focuses on offering courses to over 100 PhD students within the <a href="https://genomicsdatascience.ie">Science Foundation Ireland (SFI) Centre for Research Training in Genomics Data Science</a> program. However, we aim to expand our offerings based on community interest and the availability of volunteer instructors.</p>
+<p>Maria Doyle, the Training Coordinator for ELIXIR Ireland, also serves as the <a href="https://bioconductor.org/">Bioconductor</a> Community Manager, is part of the <a href="https://www.bioconductor.org/help/education-training/">Bioconductor Teaching Committee</a>, and leads the <a href="https://blog.bioconductor.org/posts/2023-02-24-carpentries-update/">Bioconductor Carpentries Global Training Program</a>.</p>
+<p>We invite you to express your interest in learning or teaching various topics related to life sciences and data science. Your input will help us plan future training sessions and find people who can teach. Join us in supporting the bioinformatics community in Ireland.</p>
         
-   <figure>
-     <a href="https://rdmkit.elixir-europe.org/">
-      <img src="images/RDMkit_logo.png" alt="Image 1">
-     </a>
-     </figure>
-    <p> The Research Data Management kit (RDMkit) is a set of guidelines for implementing good data management practices amd making your data FAIR (Findable, Accessible, Interoperable and Reusable). These best practice guidelines have been compiled by a network of data managers and data stewards from the ELIXIR nodes acrooss Europe. Please view <a href="pdfs/RDMKit_Guidance.pdf" > this pdf </a> for our tips on using the RDMkit. </p> 
-      <!--    </div> -->
-     <!--     <div class="image-container"> -->
-        <figure>
-     <a href="https://ds-wizard.org"> <img src="images/Data_Stewardship_Wizard_logo.png" alt="Image 2" style="width:500px;height:500px;"></a>
+        <div class="button-container">
+          <button class="button blue-button" onclick="showContent('Events')">Attend a Training Event</button>
+          <button class="button orange-button" onclick="window.open('https://forms.gle/Rp93JhJ4BPrizj4m9', '_blank')">Express Interest in Learning or Teaching</button>
+          <button class="button blue-button" onclick="showContent('DMP')">Explore Data Management Resources</button>
+        </div>
+
+        <h2 class="no-anchor text-center mb-3" style="margin-top: 40px;">Training Team</h2>
+        <div class="three-images">
+          <figure class="one-third-width">
+            <img src="images/MDoyle.jpg" class="card-img-top h-icon-5 mx-auto" alt="Training Coordinator" style="width:500px;height:500px;">
+            <figcaption>Maria Doyle <sup><a href="mailto:maria.doyle@ul.ie"><i class="fa fa-envelope" aria-hidden="true"></i></a></sup></figcaption>
+            <figcaption>Training Coordinator</figcaption>
+            <figcaption>University of Limerick</figcaption>
           </figure>
-        <p>The Data Stewardship Wizard (DSW) is an online web tool designed by ELIXIR-CH to streamline the process of creating a comprehensive data management plan (DMP). By employing a user-friendly question-based format, the DSW guides 
-          you through a series of carefully crafted inquiries, ensuring that every aspect of your data management plan is addressed while tailoring it to your specific needs. Once you provide your answers, the DSW 
-          incorporates the information into a downloadable DMP document using a specified template format. It allows multiple users to collaborate on a single document. The DSW proves particularly advantageous to individuals new to the realm of DMP writing, 
-          as it alleviates uncertainties regarding the detail required for each section. The DSW provides metrics which allow you to assess how FAIR your DMP is. Click <a href="https://researchers.ds-wizard.org"> here </a> to be redirected to the online tool for writing DMPs. 
-        </p>
-      <!--    </div> -->
-      <!--    <div class="image-container"> -->
-        <figure>
-          <a href="https://faircookbook.elixir-europe.org/content/home.html">
-      <img src="images/Faircookbook_logo.png" alt="Image 3">
-          </a>
+          <figure class="one-third-width">
+            <img src="images/LSJermiin.jpg" class="card-img-top h-icon-5 mx-auto" style="width:500px;height:500px;">
+            <figcaption>Lars Jermiin <sup><a href="mailto:lars.jermiin@universityofgalway.ie"><i class="fa fa-envelope" aria-hidden="true"></i></a></sup></figcaption>
+            <figcaption>Data Stewardship Manager</figcaption>
+            <figcaption>University of Galway</figcaption>
           </figure>
-        <p>The FAIRCookbook provides step-by-step instructions, best practices, and expert insights on implementing FAIR data principles throughout the data lifecycle. It covers a wide range of topics, including data organization, metadata creation, data documentation, data repository selection, data citation, and data sharing protocols. </p>
-   <!--         <div> -->
- <!--   </div> -->
-  <!--    </div> -->
-      </main>
-      <p> Click on the images to be redirected to the tool's website.</p>
-      <p></p>
-      <p></p>
+          <figure class="one-third-width">
+            <img src="images/sc.jpg" class="card-img-top h-icon-5 mx-auto" style="width:500px;height:500px;">
+            <figcaption>Siobhan Cleary <sup><a href="mailto:siobhan.cleary@ucd.ie"><i class="fa fa-envelope" aria-hidden="true"></i></a></sup></figcaption>
+            <figcaption>Research Data Management Coordinator</figcaption>
+            <figcaption>University College Dublin</figcaption>
+          </figure>
+        </div>
+      </div>
 
-    <div id="Events" class="content">
-      <h2>Upcoming Events</h2>
-      <p>Currently no events scheduled. </p>
-        <p>Please get in contact with our <a href="mailto:maria.doyle@ul.ie">training coordinator</a> if you would like to participate in future training events with ELIXIR Ireland.</p>
-      <h2>Past Events</h2>
-      <p><a href="https://gallantries.github.io/video-library/modules/bioconductor">Bioconductor R analyses</a>, Online, Global, 22-26 May 2023.</p>
-      <p>Data Management Planning, Vienna, Austria, 25 Jan 2023.</p>
-      <p><a href="https://tess.elixir-europe.org/events/data-management-planning">Data Management Planning</a>, Online, Ireland, 20 Jan 2023.</p>
-      <p><a href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-strand-seq">Applications of data science to cutting-edge genomics technologies- Strand Sequencing</a>, Galway, Ireland, 06 Dec 2022.</p>
-      <p><a href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-single-cell-sequencing">Applications of data science to cutting-edge genomics technologies- Single Cell Sequencing</a>, Galway, Ireland, 05 Dec 2022.</p>
-      <p><a href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-synthetic-biology">Applications of data science to cutting-edge genomics technologies- Synthetic Biology</a>, Galway, Ireland, 01-02 Dec 2022.</p>
-      <p>Multiple Sequence Alignment and Molecular Phylogenetics, Galway, Ireland Oct 2022. </p>
-      <p><a href="https://idpcentral.org/idpfun22">IDPfun All Hands Meeting "Machine Learning and Protein Structural Disorder"</a>, Dublin, Ireland, 30 Aug-02 Sep 2022.</p>
-    </div>
-
-    </div>
-
-      <!-- FOOTER -->
-      <footer class="main-footer">
-        <section>
-          <div class="container">
-            <div class="thin-footer">
-              <address>
-                ELIXIR Ireland
-                <br />
-                Head of Node: Denis Shields
-                <br />
-                UCD Conway Institute of Biomolecular and Biomedical Research
-                <br />
-                University College Dublin, Dublin 4
-                <br />
-                <a href="tel:+353 7166735">☏: +353 7166735</a>
-              </address>
-            </div>
-          </div>
-        </section>
-      </footer>
-    </div>
-    <!-- / wrapper -->
-
-  <script>
-    function showContent(id) {
-      var buttons = document.getElementsByClassName('button');
-      var contents = document.getElementsByClassName('content');
-
-      for (var i = 0; i < buttons.length; i++) {
-        buttons[i].classList.remove('active');
-      }
-
-      for (var i = 0; i < contents.length; i++) {
-        contents[i].style.display = 'none';
-      }
-
-      document.getElementById(id).classList.add('active');
-      document.getElementById(id).style.display = 'block';
-    }
-  </script>
-</body>
-</html>
+      <div id="DMP" class="content">
+        <h2>Data Management Planning Resources and Training Material</h2>
+        <table>
+          <tr>
+            <th>Title</th>
+            <th>Trainer</th>
+            <th>Date</th>
+            <th>Download</th>
+          </tr>
+          <tr>
+            <td>Research Data Management & Data Management Planning</td>
+            <td>Lars Jermiin</td>
+            <td>Feb 2023</td>
+            <td><a href="pdfs/RDM-DMP_2023_CRT-LSJermiin.pdf" target="_blank">Download</a></td>
+          </tr>
+        </table>
+        <h3>Example Data Management Plans</h3>
+        <table>
+          <tr>
+            <th>Title</th>
+            <th>Is this a Mock Plan?</th>
+            <th>Template Used</th>
+            <th>Institution</th>
+            <th>DMP Tool Used</th>
+            <th>Download</th>
+          </tr>
+          <tr>
+            <td>Mock Human RNA-Seq DMP</td>
+            <td>Y</td>
+            <td>Health Research Board</td>
+            <td>UCD</td>
+            <td>DMPOnline</td>
+            <td><a href="pdfs/Mock_DMP_for_RNA-Seq_Gene_Expression_Experiment.pdF_NA" target="_blank">Download</a></td>
+          </tr>
+          <tr
