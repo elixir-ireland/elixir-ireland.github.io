@@ -145,7 +145,8 @@ html {
 @font-face {
   font-family: "FontAwesome";
   src: url("../fonts/fontawesome-webfont.eot%3Fv=4.7.0");
-  src: url("../fonts/fontawesome-webfont.eot%3F") format("embedded-opentype"),
+  src:
+    url("../fonts/fontawesome-webfont.eot%3F") format("embedded-opentype"),
     url("../fonts/fontawesome-webfont.woff2%3Fv=4.7.0") format("woff2"),
     url("../fonts/fontawesome-webfont.woff%3Fv=4.7.0") format("woff"),
     url("../fonts/fontawesome-webfont.ttf%3Fv=4.7.0") format("truetype"),
@@ -4473,7 +4474,9 @@ input.orange:hover {
 .slideshow-container {
   position: relative;
   max-width: 90%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: auto;
 }
 
@@ -4521,6 +4524,12 @@ input.orange:hover {
 .slideshow-container .prev:hover,
 .slideshow-container .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Button Location*/
+
+.button-container {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
