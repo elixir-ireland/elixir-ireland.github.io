@@ -73,6 +73,7 @@
           </nav>
         </div>
       </header>
+
       <div class="body-content one-column">
         <!-- /HEADER -->
         <!-- MAIN CONTENT AREA -->
@@ -80,31 +81,6 @@
           <main class="main-column" id="main-content">
             <!-- First flexrow -->
             <div class="tinted">
-              <div class="button-container">
-                <!--Navigation Buttons-->
-                <button
-                  style="background-color: orange; border-color: orange"
-                  class="button"
-                  onclick="showContent('Home')"
-                >
-                  ELIXIR Ireland Training
-                </button>
-                <button
-                  style="background-color: orange; border-color: orange"
-                  class="button"
-                  onclick="showContent('DMP')"
-                >
-                  Data Management Planning Resources
-                </button>
-                <button
-                  style="background-color: orange; border-color: orange"
-                  class="button"
-                  onclick="showContent('Events')"
-                >
-                  Training Events
-                </button>
-                <!--Navigation Buttons Ends-->
-              </div>
               <div id="Home" class="content active">
                 <h2>What we provide</h2>
                 <p>
@@ -121,8 +97,13 @@
                   >
                   program.
                 </p>
-                <h2 class="no-anchor text-center mb-3">Training Team</h2>
               </div>
+            </div>
+          </main>
+          <main class="main-column" id="main-content">
+            <div id="Home" class="tinted">
+              <h2>Training Team</h2>
+
               <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                   <div class="card">
@@ -155,10 +136,11 @@
                     />
                     <div class="card-body">
                       <h5 class="card-title">
-                        Lars Jermiin<sup
-                          ><a href="mailto:lars.jermiin@universityofgalway.ie">
-                            <i class="fa fa-envelope" aria-hidden="true"></i></a
-                        ></sup>
+                        Lars Jermiin<sup>
+                          <a href="mailto:lars.jermiin@universityofgalway.ie">
+                            <i class="fa fa-envelope" aria-hidden="true"> </i>
+                          </a>
+                        </sup>
                       </h5>
                       <p class="card-text">
                         Data Stewardship Manager
@@ -177,10 +159,11 @@
                     />
                     <div class="card-body">
                       <h5 class="card-title">
-                        Siobhán Cleary<sup
-                          ><a href="mailto:Siobhan.Cleary@ucd.ie">
-                            <i class="fa fa-envelope" aria-hidden="true"></i></a
-                        ></sup>
+                        Siobhán Cleary<sup>
+                          <a href="mailto:Siobhan.Cleary@ucd.ie">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                          </a>
+                        </sup>
                       </h5>
                       <p class="card-text">
                         Research Data Management
@@ -194,116 +177,128 @@
             </div>
             <!-- trainers Ends-->
           </main>
-        </div>
-        <main class="main-column" id="main-content">
-          <div class="flexrow gutters">
-            <div class="percent-100">
-              <div class="tinted">
-                <div id="DMP" class="content">
-                  <h2>
-                    Data Management Planning Resources and Training Material
-                  </h2>
-                  <table class="table table-striped table-hover">
-                    <tr>
-                      <th>Title</th>
-                      <th>Trainer</th>
-                      <th>Date</th>
-                      <th>Download</th>
-                    </tr>
-                    <tr>
-                      <td>
-                        Research Data Management and Data Management Planning
-                      </td>
-                      <td>Lars Jermiin</td>
-                      <td>Feb 2023</td>
-                      <td>
-                        <a
-                          href="pdfs/RDM-DMP_2023_CRT-LSJermiin.pdf"
-                          target="_blank"
-                        ></a>
-                      </td>
-                    </tr>
-                  </table>
-                  <h3>ELIXIR Tools for Data Management</h3>
-                  <!--  <div class="pdf-row"> -->
-                  <!--    <div class="image-container">-->
-                  <div class="card mb-3">
-                    <a href="https://rdmkit.elixir-europe.org/">
-                      <img
-                        src="images/logos/RDMkit_logo.png"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                    </a>
-                    <div class="card-body">
-                      <p class="card-text">
-                        The Research Data Management kit (RDMkit) is a set of
-                        guidelines for implementing good data management
-                        practices amd making your data FAIR (Findable,
-                        Accessible, Interoperable and Reusable). These best
-                        practice guidelines have been compiled by a network of
-                        data managers and data stewards from the ELIXIR nodes
-                        acrooss Europe. Please view
-                        <a href="pdfs/RDMKit_Guidance.pdf">this pdf</a> for our
-                        tips on using the RDMkit.
-                      </p>
+
+          <main class="main-column" id="main-content">
+            <div class="tinted">
+              <div class="flexrow gutters">
+                <div class="percent-100">
+                  <div id="DMP" class="content">
+                    <h2>
+                      Data Management Planning Resources and Training Material
+                    </h2>
+                    <table class="table table-striped table-hover">
+                      <tr>
+                        <th>Title</th>
+                        <th>Trainer</th>
+                        <th>Date</th>
+                        <th>Download</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          Research Data Management and Data Management Planning
+                        </td>
+                        <td>Lars Jermiin</td>
+                        <td>Feb 2023</td>
+                        <td>
+                          <a
+                            href="pdfs/RDM-DMP_2023_CRT-LSJermiin.pdf"
+                            target="_blank"
+                          ></a>
+                        </td>
+                      </tr>
+                    </table>
+                    <h3>ELIXIR Tools for Data Management</h3>
+                    <!--  <div class="pdf-row"> -->
+                    <!--    <div class="image-container">-->
+                    <div class="card mb-3">
+                      <a href="https://rdmkit.elixir-europe.org/">
+                        <img
+                          src="images/logos/RDMkit_logo.png"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </a>
+                      <div class="card-body">
+                        <p class="card-text">
+                          The Research Data Management kit (RDMkit) is a set of
+                          guidelines for implementing good data management
+                          practices amd making your data FAIR (Findable,
+                          Accessible, Interoperable and Reusable). These best
+                          practice guidelines have been compiled by a network of
+                          data managers and data stewards from the ELIXIR nodes
+                          acrooss Europe. Please view
+                          <a href="pdfs/RDMKit_Guidance.pdf">this pdf</a> for
+                          our tips on using the RDMkit.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="card mb-3">
-                    <a href="https://ds-wizard.org">
-                      <img
-                        src="images/logos/Data_Stewardship_Wizard_logo.png"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                    </a>
-                    <div class="card-body">
-                      <p class="card-text">
-                        The Data Stewardship Wizard (DSW) is an online web tool
-                        designed by ELIXIR-CH to streamline the process of
-                        creating a comprehensive data management plan (DMP). By
-                        employing a user-friendly question-based format, the DSW
-                        guides you through a series of carefully crafted
-                        inquiries, ensuring that every aspect of your data
-                        management plan is addressed while tailoring it to your
-                        specific needs. Once you provide your answers, the DSW
-                        incorporates the information into a downloadable DMP
-                        document using a specified template format. It allows
-                        multiple users to collaborate on a single document. The
-                        DSW proves particularly advantageous to individuals new
-                        to the realm of DMP writing, as it alleviates
-                        uncertainties regarding the detail required for each
-                        section. The DSW provides metrics which allow you to
-                        assess how FAIR your DMP is. Click
-                        <a href="https://researchers.ds-wizard.org">here</a>
-                        to be redirected to the online tool for writing DMPs.
-                      </p>
+                    <div class="card mb-3">
+                      <a href="https://ds-wizard.org">
+                        <img
+                          src="images/logos/Data_Stewardship_Wizard_logo.png"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </a>
+                      <div class="card-body">
+                        <p class="card-text">
+                          The Data Stewardship Wizard (DSW) is an online web
+                          tool designed by ELIXIR-CH to streamline the process
+                          of creating a comprehensive data management plan
+                          (DMP). By employing a user-friendly question-based
+                          format, the DSW guides you through a series of
+                          carefully crafted inquiries, ensuring that every
+                          aspect of your data management plan is addressed while
+                          tailoring it to your specific needs. Once you provide
+                          your answers, the DSW incorporates the information
+                          into a downloadable DMP document using a specified
+                          template format. It allows multiple users to
+                          collaborate on a single document. The DSW proves
+                          particularly advantageous to individuals new to the
+                          realm of DMP writing, as it alleviates uncertainties
+                          regarding the detail required for each section. The
+                          DSW provides metrics which allow you to assess how
+                          FAIR your DMP is. Click
+                          <a href="https://researchers.ds-wizard.org">here</a>
+                          to be redirected to the online tool for writing DMPs.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="card mb-3">
-                    <a
-                      href="https://faircookbook.elixir-europe.org/content/home.html"
-                    >
-                      <img
-                        src="images/logos/Faircookbook_logo.png"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                    </a>
-                    <div class="card-body">
-                      <p class="card-text">
-                        The FAIRCookbook provides step-by-step instructions,
-                        best practices, and expert insights on implementing FAIR
-                        data principles throughout the data lifecycle. It covers
-                        a wide range of topics, including data organization,
-                        metadata creation, data documentation, data repository
-                        selection, data citation, and data sharing protocols.
-                      </p>
+                    <div class="card mb-3">
+                      <a
+                        href="https://faircookbook.elixir-europe.org/content/home.html"
+                      >
+                        <img
+                          src="images/logos/Faircookbook_logo.png"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </a>
+                      <div class="card-body">
+                        <p class="card-text">
+                          The FAIRCookbook provides step-by-step instructions,
+                          best practices, and expert insights on implementing
+                          FAIR data principles throughout the data lifecycle. It
+                          covers a wide range of topics, including data
+                          organization, metadata creation, data documentation,
+                          data repository selection, data citation, and data
+                          sharing protocols.
+                        </p>
+                      </div>
                     </div>
+                    <p>
+                      <sup>*</sup>Click on the images to be redirected to the
+                      tool's website.
+                    </p>
                   </div>
-                  <p>
-                    Click on the images to be redirected to the tool's website.
-                  </p>
+                </div>
+              </div>
+            </div>
+          </main>
+          <main class="main-column" id="main-content">
+            <div class="tinted">
+              <div class="flexrow gutters">
+                <div class="percent-100">
                   <div id="Events" class="content">
                     <h2>Upcoming Events</h2>
                     <p>Currently no events scheduled.</p>
@@ -316,102 +311,106 @@
                       with ELIXIR Ireland.
                     </p>
                     <h2>Past Events</h2>
-                    <p>
-                      <a
-                        href="https://gallantries.github.io/video-library/modules/bioconductor"
-                        >Bioconductor R analyses</a
-                      >, Online, Global, 22-26 May 2023.
-                    </p>
-                    <p>
-                      Data Management Planning, Vienna, Austria, 25 Jan 2023.
-                    </p>
-                    <p>
-                      <a
-                        href="https://tess.elixir-europe.org/events/data-management-planning"
-                        >Data Management Planning</a
-                      >, Online, Ireland, 20 Jan 2023.
-                    </p>
-                    <p>
-                      <a
-                        href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-strand-seq"
-                        >Applications of data science to cutting-edge genomics
-                        technologies- Strand Sequencing
-                      </a>
-                      Galway, Ireland, 06 Dec 2022.
-                    </p>
-                    <p>
-                      <a
-                        href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-single-cell-sequencing"
-                        >Applications of data science to cutting-edge genomics
-                        technologies- Single Cell Sequencing</a
-                      >
-                      Galway, Ireland, 05 Dec 2022.
-                    </p>
-                    <p>
-                      <a
-                        href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-synthetic-biology"
-                        >Applications of data science to cutting-edge genomics
-                        technologies- Synthetic Biology</a
-                      >
-                      Galway, Ireland, 01-02 Dec 2022.
-                    </p>
-                    <p>
-                      Multiple Sequence Alignment and Molecular Phylogenetics,
-                      Galway, Ireland Oct 2022.
-                    </p>
-                    <p>
-                      <a href="https://idpcentral.org/idpfun22"
-                        >IDPfun All Hands Meeting "Machine Learning and Protein
-                        Structural Disorder"</a
-                      >
-                      , Dublin, Ireland, 30 Aug - 02 Sep 2022.
-                    </p>
-                    <p><a href=""></a>, Dublin, Ireland, 30 Aug-02 Sep 2022.</p>
+
+                    <table class="table table-striped table-hover">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <a
+                              href="https://gallantries.github.io/video-library/modules/bioconductor"
+                              >Bioconductor R analyses</a
+                            >, Online, Global, 22-26 May 2023.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Data Management Planning, Vienna, Austria, 25 Jan
+                            2023.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a
+                              href="https://tess.elixir-europe.org/events/data-management-planning"
+                              >Data Management Planning</a
+                            >, Online, Ireland, 20 Jan 2023.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a
+                              href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-strand-seq"
+                              >Applications of data science to cutting-edge
+                              genomics technologies- Strand Sequencing
+                            </a>
+                            Galway, Ireland, 06 Dec 2022.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a
+                              href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-single-cell-sequencing"
+                              >Applications of data science to cutting-edge
+                              genomics technologies- Single Cell Sequencing</a
+                            >
+                            Galway, Ireland, 05 Dec 2022.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a
+                              href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-synthetic-biology"
+                              >Applications of data science to cutting-edge
+                              genomics technologies- Synthetic Biology</a
+                            >
+                            Galway, Ireland, 01-02 Dec 2022.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Multiple Sequence Alignment and Molecular
+                            Phylogenetics, Galway, Ireland Oct 2022.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="https://idpcentral.org/idpfun22"
+                              >IDPfun All Hands Meeting "Machine Learning and
+                              Protein Structural Disorder"</a
+                            >
+                            , Dublin, Ireland, 30 Aug - 02 Sep 2022.
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </main>
-      </div>
-    </div>
-    <!-- FOOTER -->
-    <footer class="main-footer">
-      <section>
-        <div class="container">
-          <div class="thin-footer">
-            <address>
-              ELIXIR Ireland
-              <br />
-              Head of Node: Denis Shields
-              <br />
-              UCD Conway Institute of Biomolecular and Biomedical Research
-              <br />
-              University College Dublin, Dublin 4
-              <br />
-              <a href="tel:+353 7166735">☏: +353 7166735</a>
-            </address>
-          </div>
+          </main>
         </div>
-      </section>
-    </footer>
-    <!-- / wrapper -->
-    <script>
-      function showContent(id) {
-        var buttons = document.getElementsByClassName("button");
-        var contents = document.getElementsByClassName("content");
-
-        for (var i = 0; i < buttons.length; i++) {
-          buttons[i].classList.remove("active");
-        }
-
-        for (var i = 0; i < contents.length; i++) {
-          contents[i].style.display = "none";
-        }
-
-        document.getElementById(id).classList.add("active");
-        document.getElementById(id).style.display = "block";
-      }
-    </script>
+      </div>
+      <!-- FOOTER -->
+      <footer class="main-footer">
+        <section>
+          <div class="container">
+            <div class="thin-footer">
+              <address>
+                ELIXIR Ireland
+                <br />
+                Head of Node: Denis Shields
+                <br />
+                UCD Conway Institute of Biomolecular and Biomedical Research
+                <br />
+                University College Dublin, Dublin 4
+                <br />
+                <a href="tel:+353 7166735">☏: +353 7166735</a>
+              </address>
+            </div>
+          </div>
+        </section>
+      </footer>
+      <!-- / wrapper -->
+    </div>
   </body>
 </html>
